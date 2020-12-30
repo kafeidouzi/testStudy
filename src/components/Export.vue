@@ -10,13 +10,13 @@ export default {
     return {
       tableData:[
         {
-          productNo:'3242424',
+          productNo:'3453453443',
           title:'sdfsgsgssssssssssssssssssssssssssssssssssss',
           route:'dsfsfsf',
           statename:'sdfsfsf'
         },
         {
-          productNo:'3242424',
+          productNo:'3453453443',
           title:'sdfsgsgssssssssssssssssssssssssssssssssssss',
           route:'dsfsfsf',
           statename:'sdfsfsf'

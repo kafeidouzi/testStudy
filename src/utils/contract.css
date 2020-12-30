@@ -1,0 +1,12 @@
+#demo{
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+table{ border-collapse:collapse;}
+table td{ border:2px solid #ddd; width:100px; height:35px; text-align:center}
