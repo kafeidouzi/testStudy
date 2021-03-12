@@ -28,7 +28,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
     "html2canvas": "^1.0.0-rc.5",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "script-loader": "^0.7.2",
     "vue-template-compiler": "^2.6.11"
   },
