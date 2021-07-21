@@ -1,0 +1,423 @@
+/* 个人信息 */
+.my{
+    overflow: hidden;
+}
+.my-info {
+    position: relative;
+    background: #fff;
+}
+.my-info .info-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.my-info .my-info-bg {
+    overflow: hidden;
+    position: relative;
+    font-size: 22px;
+    color: #333;
+}
+.my-info .info-item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 56rpx 28rpx 0 28rpx;
+}
+.my-info .info-item .my-img {
+    position: relative;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.my-info .info-item .my-img .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.my-info .info-item .my-mes {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 0;
+    margin-right: 75px;
+}
+.my-info .info-item .my-mes .mem-name {
+    position: relative;
+    font-size: 40rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.my-info .info-item .my-mes .mem-level {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 6px;
+    line-height: 16px;
+    font-size: 32rpx;
+}
+.my-info .info-item .my-mes .mem-level .pl {
+    color: #333;
+}
+
+.my-info .info-item .my-account {
+    position: absolute;
+    padding: 20px;
+    /* #ifdef MP-WEIXIN */
+    top: -5px;
+    right: 97px;
+    /* #endif */
+    /* #ifndef MP-WEIXIN */
+    top: 0px;
+    right: 0px;
+    /* #endif */
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+}
+.my-info .info-item .my-account .img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.my-info .info-share {
+    position: absolute;
+    right: 0px;
+    bottom: 40rpx;
+    font-size: 0;
+    width: 70px;
+    /* padding: 15px 0; */
+    padding: 0 0 20rpx 0;
+    height: 25px;
+}
+.my-info .info-share .img {
+    width: 100%;
+    height: 100%;
+}
+/* end 个人信息 */
+
+/* 快捷入口 */
+.quick-entry {
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #fff;
+}
+.quick-entry .item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+}
+.quick-entry .item .item-img {
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.quick-entry .item .item-img .img {
+    width: 100%;
+    height: 100%;
+}
+.quick-entry .item .item-num {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-family: arial;
+}
+.quick-entry .item .item-txt {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 6px;
+	margin-top: 6px;
+    color: #333;
+}
+.quick-entry .item .deposit {
+	font-size: 20px;
+}
+.quick-entry .item .sub {
+    position: absolute;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    background-color: var(--themescolor);
+    font-family: arial;
+    box-sizing: border-box;
+    width: auto;
+    min-width: 16px;
+    padding: 0 4px;
+    height: 16px;
+    border-radius: 16px;
+    top: -5px;
+    left: 50%;
+    margin-left: 5px;
+    /* display: none; */
+}
+.quick-entry .item .sub:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    margin-top: 1px;
+}
+/* end 快捷入口 */
+
+.my-order {
+    position: relative;
+    height: 236rpx;
+    background: #fff;
+}
+
+.my-order .order-title{
+    width: 100%;
+    height: 100rpx;
+    box-sizing: border-box;
+    padding: 0 28rpx;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-order .item-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-order .item-box .item{
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+}
+
+.my-order .item-box .item .item-img{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.my-order .item-box .item .item-img .img{
+    width: 32px;
+    height: 32px;
+}
+.my-order .item-box .item .item-txt{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+	margin-top: 10rpx;
+}
+.my-order .item-box .item .sub {
+    position: absolute;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    background-color: #F5222D;
+    font-family: arial;
+    box-sizing: border-box;
+    width: auto;
+    min-width: 16px;
+    padding: 0 4px;
+    height: 16px;
+	line-height: 16px;
+    border-radius: 16px;
+    top: 0px;
+    left: 50%;
+    margin-left: 5px;
+    /* display: none; */
+}
+
+.my-order .quick-entry .item:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: auto;
+    top: 5px;
+    bottom: 5px;
+    right: 0;
+    background: #f2f2f2;
+}
+.my-order .quick-entry .item:last-child:after {
+    background: #fff;
+}
+
+.my-col .quick-entry .item {
+    padding: 2px 0 5px;
+}
+
+/* 其他操作 */
+.other-handle {
+    background: #fff;
+    margin: 10px 0 14px 0;
+}
+.other-handle .handle-item {
+    /* position: relative; */
+    display: inline-block;
+	text-align: center;
+	width: 25%;
+    height: 100rpx;
+	margin-bottom: 24px;
+}
+.other-handle .handle-item:nth-child(5),
+.other-handle .handle-item:nth-child(6),
+.other-handle .handle-item:nth-child(7) {
+	margin-bottom: 14px;
+}
+	
+.other-handle .handle-item .item-img {
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+	margin-bottom: 15rpx;
+}
+.other-handle .handle-item .item-icon {
+    position: absolute;
+    right: 14px;
+    top: calc(50% - 14rpx);
+    width: 28rpx;
+    height: 28rpx;
+}
+.other-handle .handle-item .item-img .img {
+    width: 100%;
+    height: 100%;
+}
+.other-handle .handle-item .item-txt {
+    font-size: 28rpx;
+}
+.other-handle .handle-item .item-txt:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 1px;
+    font-size: 14px;
+    bottom: 0;
+    right: 0;
+    left: 98rpx;
+    background: #D8D8D8;
+}
+.other-handle .handle-item:last-child .item-txt:after {
+    background: #FFF;
+}
+/* end 其他操作 */
+
+/* 钱包 */
+.price-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 16px;
+    font-family: 'PingFangSC-Medium';
+    padding-left: 4px;
+}
+/* end 钱包 */
+/* 猜你喜欢 */
+.like-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.like-box .line {
+	width: 76rpx;
+	height: 4rpx;
+	background-color: red;
+}
+.like-box .line-left {
+	margin-right: 20rpx;
+    background: linear-gradient(270deg, #E02020 0%,  rgba(242, 67, 67, 0) 100%);
+}
+.like-box .line-right {
+	margin-left: 20rpx;
+	background: linear-gradient(270deg, rgba(242, 67, 67, 0) 0%, #E02020 100%);
+}
+.like-box .text {
+	font-size: 32rpx;
+	color: #333;
+}
+.like-shop {
+	display: flex;
+	padding: 30rpx 20rpx 50rpx;
+}
+.like-shop view {
+	width: 346rpx;
+	height: 532rpx;
+	background-color: #fff;
+	border-radius: 8rpx;
+}
+.like-shop view:first-child {
+	margin-right: 18rpx;
+}
+.like-shop view .goods {
+	width: 100%;
+    height: 300rpx;
+    background: #EBEBEB;
+	text-align: center;
+}
+.like-shop view .goods image {
+	width: 80%;
+	height: 80%;
+	margin-top: 20rpx;
+}
+.like-shop view .goods-name {
+	display: inline-block;
+	width: 89%;
+	margin: 16rpx 20rpx 0 20rpx;
+	font-size: 30rpx;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.like-shop view .subtitle {
+	font-size: 24rpx;
+	color: #999;
+	margin-left: 20rpx;
+}
+.like-shop view .tag {
+	margin-left: 20rpx;
+	width: 60rpx;
+	height: 32rpx;
+	line-height: 32rpx;
+	background: #FFF5EA;
+	border-radius: 4rpx;
+	border: 2rpx solid #FFA032;
+	font-size: 20rpx;
+    color: #FFA032;
+	text-align: center;
+	margin-top: 12rpx;
+}
+.like-shop view .price {
+    color: #DC231E;
+    font-size: 24rpx;
+	margin-left: 20rpx;
+	margin-top: 14rpx;
+}
+.like-shop view .price .enlarge {
+	font-size: 32rpx;
+}

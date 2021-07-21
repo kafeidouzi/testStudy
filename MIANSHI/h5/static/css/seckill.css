@@ -1,0 +1,283 @@
+/* 天天秒杀 */
+
+/* 场次 */
+.seckill .sec-tab {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  max-width: 750px;
+  height: 48px;
+  color: #999;
+  z-index: 99;
+  background: #2d3845;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.seckill .sec-tab .tab-item {
+  display: block;
+  width: 20%;
+  text-align: center;
+  height: 48px;
+  position: relative;
+  cursor: pointer;
+}
+.seckill .sec-tab .tab-item .time {
+  color: #fff;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 6px;
+  overflow: hidden;
+  font-family: arial;
+}
+.seckill .sec-tab .tab-item .state {
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+}
+.seckill .sec-tab .tab-item.cur {
+  background: var(--themescolor);
+}
+/* end 场次 */
+
+/* 剩余时间 */
+.seckill .rest-time {
+  margin-top: 48px;
+  padding: 10px;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+  position: relative;
+}
+.seckill .rest-time .item {
+  display: inline-block;
+  padding: 0 15px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  font-family: arial;
+}
+.seckill .rest-time .time-span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.seckill .rest-time .time-box {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 600;
+}
+.seckill .rest-time .time-box .time-i {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.seckill .rest-time:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 75%;
+  z-index: 1;
+  display: block;
+  height: 1px;
+  width: auto;
+  background: #f1f1f1;
+}
+ .rest-time:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    right: 20px;
+    z-index: 1;
+    display: block;
+    height: 1px;
+    width: auto;
+    background: #f1f1f1;
+  }
+/* end 剩余时间 */
+
+/* 广告 */
+.seckill .long-adv {
+  margin-top: 10px;
+}
+.seckill .long-adv .item {
+  display: block;
+  background: #fff;
+  position: relative;
+  font-size: 0;
+}
+.seckill .long-adv .item img {
+  width: 100%;
+}
+/* end 广告 */
+
+/* 秒杀列表 */
+.seckill .seckill-list {
+  background: #fff;
+  padding: 0 10px;
+}
+.seckill .seckill-list .list-item {
+  padding: 13px 0;
+  cursor: pointer;
+  position: relative;
+}
+.seckill .seckill-list .list-item .sec-img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+}
+.seckill .seckill-list .list-item .sec-img .img {
+  width: 100%;
+  height: 100%;
+}
+.seckill .seckill-list .list-item .sec-txt {
+  margin-left: 112px;
+  position: relative;
+}
+.seckill .seckill-list .list-item:after {
+  content: " ";
+  display: block;
+  width: auto;
+  height: 1px;
+  position: absolute;
+  left: 110px;
+  right: 0;
+  bottom: -1px;
+  background: #f1f1f1;
+}
+.seckill .seckill-list .list-item:last-child:after {
+  height: 0;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-name {
+  height: 40px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-name .name {
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-name .des {
+  display: block;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #999;
+  font-size: 12px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-price {
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-price .current-price {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-price .current-price .price {
+  color: var(--themescolor);
+  margin-left: 3px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-price .current-price .price .now {
+  color: var(--themescolor);
+  font-size: 16px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-price .old-price {
+  color: #999;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state {
+  position: relative;
+  height: 24px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-left {
+  position: relative;
+  box-sizing: border-box;
+  width: 100px;
+  height: 16px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--themescolor);
+  text-align: center;
+  overflow: hidden;
+  margin-top: 4px;
+  float: left;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-left .state-progress {
+  background:var(--themescolor);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  vertical-align: top;
+  opacity: 0.15;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-left .state-num {
+  color: var(--themescolor);
+  position: relative;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  line-height: 15px;
+  font-size: 12px;
+  font-family: arial;
+}
+
+/* 抢完和未开抢 */
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-sold ,
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-limit {
+  float: left;
+  line-height: 24px;
+  font-size: 12px;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-sold {
+  color: #999;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-limit {
+  color: var(--themescolor);
+}
+/* end 抢完和未开抢 */
+
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-right {
+  float: right;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sta-right .btn {
+  display: block;
+  width: 68px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 12px;
+  background: var(--themescolor);
+  color: #fff;
+  border-radius: 24px;
+  vertical-align: top;
+  font-family: arial;
+}
+.seckill .seckill-list .list-item .sec-txt .sec-state .sold-out .btn {
+  background: #ccc;
+}
+/* end 秒杀列表 */
+
+/* end 天天秒杀 */

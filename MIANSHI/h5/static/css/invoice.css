@@ -1,0 +1,289 @@
+/* 发票信息 */
+.invoice {
+    padding-bottom: 54px;
+}
+.apply-invoice{
+    position: relative;
+}
+.invoice .inv-con {
+    background: #fff;
+    padding: 0 14px;
+    margin-bottom: 10px;
+	padding-right: 0;
+}
+.invoice .inv-con:last-child {
+    margin: 0;
+}
+.invoice .inv-con .inv-p {
+    padding: 12px 0;
+    font-size: 28rpx;
+    color: #666;
+}
+.invoice .inv-con .inv-p:last-child {
+    padding-top: 0;
+}
+.invoice .inv-con .inv-p .item {
+    display: inline-block;
+    margin-right: 48rpx;
+    font-size: 28rpx;
+    line-height: 32rpx;
+    cursor: pointer;
+}
+.invoice .inv-con .inv-p .item:last-child {
+    margin-right: 0;
+}
+.invoice .inv-con .inv-p .item .choose {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    margin-right: 8px;
+    background: url("~@/static/images/choose.png") no-repeat;
+    background-size: 14px;
+    margin-top: 1px;
+}
+.invoice .inv-con .inv-p .item .choose.cur {
+    background: url("~@/static/images/choosed.png") no-repeat;
+    background-size: 14px;
+    border-radius: 50%;
+    /* background-color: var(--themescolor); */
+	background-color: #DC231E;
+}
+.invoice .inv-con .inv-p .item .choose_text {
+    color: #dc231e;
+}
+.invoice .inv-con .inv-p .item .agree_text {
+    color: #333;
+    font-size: 28rpx;
+}
+.invoice .inv-con .inv-p .item .agree_book {
+    color: #0091FF;
+}
+.invoice .inv-con .inv-item {
+    position: relative;
+    padding: 22rpx 0;
+    line-height: 24px;
+    font-size: 13px;
+    border-bottom: 1px solid #ededed;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+	padding-right: 14px;
+}
+.invoice .inv-con .inv-item:last-child {
+    border: 0;
+}
+.invoice .inv-con .inv-item .item-tit {
+    width: 174rpx;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    font-size: 28rpx;
+    color: #666;
+}
+.invoice .inv-con .inv-item .inv-style {
+    display: inline-block;
+    vertical-align: top;
+    border: 2rpx solid #ddd;
+    font-size: 20rpx;
+    border-radius: 20rpx;
+    margin: 0 5px;
+	width: 40px;
+	height: 20px;
+    line-height: 20px;
+	text-align: center;
+}
+.invoice .inv-con .inv-item .inv-style.cur {
+    /* border-color: var(--themescolor); */
+    /* color: var(--themescolor); */
+	border-color: #DC231E;
+	color: #DC231E;
+	border-radius: 10px;
+}
+.invoice .inv-con .inv-item .item-input {
+    border: 0;
+    width: 440rpx;
+    height: 24px;
+    vertical-align: top;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    font-size: 13px;
+}
+.invoice .inv-con .inv-item .item-txt {
+    border: 0;
+    width: 440rpx;
+    height: 24px;
+    vertical-align: top;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    color: #b8b8b8;
+    font-size: 28rpx;
+}
+.invoice .inv-con .inv-item .item-txt2 {
+    border: 0;
+    width: 440rpx;
+    min-height: 24px;
+    vertical-align: top;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    color: #333;
+    font-size: 28rpx;
+}
+.invoice .inv-con .inv-item .item-txt3 {
+    border: 0;
+    width: 440rpx;
+    height: 24px;
+    vertical-align: top;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    color: #dc231e;
+    font-size: 28rpx;
+}
+.invoice .inv-con .inv-item .que-icon {
+    font-size: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("~@/static/images/question.png") no-repeat;
+    background-size: 18px 18px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.invoice .inv-tip {
+    padding: 0 14px 100rpx;
+    font-size: 14px;
+}
+.invoice .inv-tip .p {
+    color: #999;
+    font-size: 28rpx;
+    line-height: 48rpx;
+    margin-top: 5px;
+}
+.inv-btn {
+    position: fixed;
+    bottom: 0;
+    height: 48px;
+    background: var(--themescolor);
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    font-size: 15px;
+}
+/* placeholder */
+.input-placeholder:after {
+    font-size: 28rpx !important;
+    color: red !important;
+}
+/* placeholder end */
+/* end 发票信息 */
+
+/* 注释 */
+.popup-hide .popup-small-box {
+    width: 90%;
+    max-width: 675px;
+}
+.popup-hide .inv-des {
+    line-height: 22px;
+    font-size: 13px;
+    color: #666;
+    display: block;
+    text-align: left;
+    padding: 0 5px;
+}
+.popup-hide .inv-des .link {
+    color: #007de4;
+    display: block;
+}
+.popup-hide .inv-des .link:hover {
+    text-decoration: underline;
+}
+/* end 注释 */
+/* 选择省市区 */
+.upload-img image,
+.area-popup .close-icon image {
+    width: 100%;
+    height: 100%;
+}
+.area-popup {
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    width: 100%;
+    height: 772upx;
+}
+.popup-freight {
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+.area-popup .popup-title .text {
+    width: 100%;
+    text-align: center;
+    padding: 30rpx 24rpx;
+    box-sizing: border-box;
+}
+.area-popup .close-icon {
+    position: absolute;
+    top: 40rpx;
+    right: 40rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+/* 选择公司地址 */
+.myScrollView{
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 694rpx;
+    height: 500rpx;
+    z-index: 999;
+    padding: 12rpx 10rpx;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px 2px rgba(206,206,206,0.50);
+    border-radius: 4px 2px 0px 2px 4px 4px 4px;
+}
+.tip {
+    position: absolute;
+    display: inline-block;
+    bottom: -23rpx;
+    left: 17px;
+    width: 0;
+    background: #fff;
+    height: 0px;
+    border-style: solid;
+    border-width: 16rpx;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 6px 2px rgba(206,206,206,0.7);
+}
+.add-item{
+    width: 100%;
+    font-size: 22rpx;
+    color: #333;
+    padding: 16rpx 0;
+}
+.text-1{
+    line-height: 22rpx;
+}

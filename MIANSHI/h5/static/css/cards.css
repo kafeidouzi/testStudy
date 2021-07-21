@@ -1,0 +1,329 @@
+/* 银行卡 */
+.cards {
+  position: relative;
+}
+.cards .card-list {
+  padding: 5px 15px 20px;
+}
+.cards .card-item {
+  margin-top: 15px;
+  padding: 0.4rem 0.8rem 0.5rem 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.cards .card-item.bg01 {
+  background: -webkit-gradient(linear,left top,right top,from(#00b6a7),to(#058eae));
+  background: -o-linear-gradient(left,#00b6a7,#058eae);
+  background: linear-gradient(left,#00b6a7,#058eae);
+  background: -webkit-linear-gradient(left,#00b6a7,#058eae);
+  box-shadow: 0 1px 3px rgba(5,143,174,0.5);
+}
+.cards .card-item.bg02 {
+  background: -webkit-gradient(linear,left top,right top,from(#fb8c71),to(#fd5262));
+  background: -o-linear-gradient(left,#fb8c71,#fd5262);
+  background: linear-gradient(left,#fb8c71,#fd5262);
+  background: -webkit-linear-gradient(left,#fb8c71,#fd5262);
+  box-shadow: 0 1px 3px rgba(253,84,98,0.5);
+}
+.cards .card-item.bg03 {
+  background: -webkit-gradient(linear,left top,right top,from(#5fa0d8),to(#4268bd));
+  background: -o-linear-gradient(left,#5fa0d8,#4268bd);
+  background: linear-gradient(left,#5fa0d8,#4268bd);
+  background: -webkit-linear-gradient(left,#5fa0d8,#0584268bdeae);
+  box-shadow: 0 1px 3px rgba(67,105,190,0.5);
+}
+.cards .card-item .card-img {
+  position: absolute;
+  left: 0.4rem;
+  top: 0.4rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0.1rem;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 0;
+  overflow: hidden;
+}
+.cards .card-item .card-img img {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.cards .card-item .card-msg {
+  color: #fff;
+}
+.cards .card-item .card-msg .name {
+  font-size: 0.32rem;
+  line-height: 1;
+  display: block;
+}
+.cards .card-item .card-msg .card-category {
+  font-size: 0.24rem;
+  margin-top: 0.1rem;
+  display: block;
+}
+.cards .card-item .card-num {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-top: 0.3rem;
+}
+.cards .card-item .card-num .num {
+  display: block;
+  width: 25%;
+  font-family: arial;
+  font-size: 0.5rem;
+  text-align: left;
+  height: 0.5rem;
+  line-height: 0.8rem;
+  opacity: 0.5;
+}
+.cards .card-item .card-num .num.last-num {
+  line-height: 0.5rem;
+  opacity: 1;
+}
+.cards .card-item .card-del {
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #eee;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0;
+  overflow: hidden;
+  display: none;
+}
+.cards .card-item .card-del img {
+  width: 0.28rem;
+  height: 0.28rem;
+  vertical-align: middle;
+}
+.cards .card-list.edit .card-item {
+  margin-right: 1rem;
+}
+.cards .card-list.edit .card-item .card-del {
+  display: block;
+}
+.cards .add {
+  font-size: 16px;
+  font-family: arial;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.cards .entry-con {
+  background: #f6f7f8;
+}
+/* end 银行卡 */
+
+/* 添加银行卡 */
+.add-card .add-item .item-tit {
+  padding: 10px;
+  color: #999;
+  font-size: 12px;
+  line-height: 24px;
+  background: #f6f7f8;
+}
+.add-card .add-item .item-con {
+  background: #fff;
+  padding: 0 10px;
+}
+.add-card .add-item .item-con .con-item {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+  padding: 10px 0;
+  background: #fff;
+}
+.add-card .add-item .item-con .con-item .con-span {
+  display: block;
+  width: 80px;
+  line-height: 24px;
+}
+.add-card .add-item .item-con .con-item .card-name ,
+.add-card .add-item .item-con .con-item input[type="text"] , 
+.add-card .add-item .item-con .con-item .bank-card {
+  line-height: 24px;
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+}
+.add-card .add-item .item-con .con-item .bank-card {
+  cursor: pointer;
+}
+.add-card .add-item .item-con .con-item .arr {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.add-card .add-item .item-con .con-item .arr img {
+  width: 100%;
+  height: 100%;
+}
+.add-card .add-item .item-con .con-item .send-code {
+  color: #666;
+  font-size: 14px;
+  display: block;
+  line-height: 24px;
+  padding: 0 10px;
+  border-left: 1px solid #f1f1f1;
+}
+.add-card .agreement {
+  padding: 0 10px;
+  line-height: 1;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #999;
+}
+.add-card .agreement input[type="checkbox"] {
+  vertical-align: top;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+.add-card .agreement .agreement-a {
+  color: var(--themescolor);
+}
+/* end 添加银行卡 */
+
+/* 未实名弹窗 */
+.popup-hide .no-certification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10%;
+  max-width: 750px;
+  display: none;
+}
+.popup-hide.show .no-certification {
+  display: block;
+}
+.popup-hide .no-certification .cer-box {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.popup-hide .no-certification .cer-box .cer-img {
+  padding: 30px 0 20px;
+  font-size: 0;
+  text-align: center;
+}
+.popup-hide .no-certification .cer-box .cer-img img {
+  width: 100px;
+  height: 100px;
+}
+.popup-hide .no-certification .cer-box h4 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+}
+.popup-hide .no-certification .cer-box .cer-txt {
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 20px 20px;
+  color: #666;
+}
+.popup-hide .no-certification .cer-box .cer-btn {
+  display: block;
+  width: 50%;
+  margin: 0 auto 10px;
+  background: var(--themescolor);
+  line-height: 38px;
+  border-radius: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+.popup-hide .no-certification .cer-box .close-pop-up {
+  position: absolute;
+  background: #fff;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  border-radius: 0 5px 0 0;
+  font-size: 0;
+}
+.popup-hide .no-certification .cer-box .close-pop-up img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+/* end 未实名弹窗 */
+
+/* 实名认证 */
+.add-card .item-con .certification {
+  padding: 20px 0 10px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.add-card .item-con .certification .con-dl {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+  margin: 0 10px;
+}
+.add-card .item-con .certification .con-dl .id-card {
+  display: block;
+  text-align: center;
+  background: #fbfdff;
+  border: 1px solid #e2e2ef;
+  height: 120px;
+  line-height: 120px;
+  width: 100%;
+  max-width: 180px;
+  margin: auto;
+  font-size: 0;
+  border-radius: 5px;
+}
+.add-card .item-con .certification .con-dl .id-card img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+.add-card .item-con .certification .con-dl .id-card .id-card-img-default {
+  display: block;
+  width: 90px;
+  height: 60px;
+  margin: 30px auto;
+  line-height: 60px;
+}
+.add-card .item-con .certification .con-dl .txt {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* end 实名认证 */

@@ -1,0 +1,20 @@
+.pro-list-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	padding: 10rpx;
+	background: #f2f2f2;
+}
+
+.pro-list-area .flex-start { 
+	display: none;
+}
+.pro-list-area > pro-list {
+	width: 345rpx;
+	padding: 0;
+	margin: 10rpx;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border-radius: 8rpx;
+}

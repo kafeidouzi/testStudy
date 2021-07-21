@@ -1,0 +1,125 @@
+/* 专题 */
+.topic .item {
+  margin-bottom: 10px;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.topic .item .topic-tit {
+  padding: 10px 10px 0 10px;
+  line-height: 22px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.topic .item .topic-tit .msg {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+}
+.topic .item .topic-tit .name ,
+.topic .item .topic-tit .des {
+  line-height: 24px;
+  height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+.topic .item .topic-tit .name {
+  font-size: 16px;
+}
+.topic .item .topic-tit .des {
+  font-size: 12px;
+  color: #999;
+}
+.topic .item .topic-tit .price {
+  display: block;
+  line-height: 24px;
+  color: var(--themescolor);
+  font-size: 12px;
+}
+.topic .item .topic-tit .price .now {
+  font-size: 16px;
+  color: var(--themescolor);
+  margin-right: 3px;
+}
+.topic .item .topic-img {
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+}
+.topic .item .topic-img .img {
+  width: 100%;
+}
+.topic .item .topic-time {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial;
+  line-height: 22px;
+}
+.topic .item .topic-time .time-i {
+  color: #fff;
+}
+/* end 专题 */
+
+/* 专题详情 */
+.floor-tit {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  margin-top: 10px;
+}
+.floor-tit .tit-em {
+  display: block;
+  color: #999;
+  letter-spacing: 1px;
+  font-family: arial;
+  font-size: 12px;
+}
+.floor-tit .tit-span {
+  display: inline-block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 2px;
+  position: relative;
+  background: #fff;
+  padding: 0 15px;
+  letter-spacing: 3px;
+}
+.floor-tit .tit-span:before ,
+.floor-tit .tit-span:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  background: #f1f1f1;
+  font-size: 0;
+  height: 1px;
+  width: 70px;
+  bottom: 8px;
+}
+.floor-tit .tit-span:before {
+  left: -70px;
+}
+.floor-tit .tit-span:after {
+  right: -70px;
+}
+.topic .topic-det .pro-list .pro-box .pro-price .old-price {
+  vertical-align: top;
+  margin-top: 1px;
+  display: inline-block;
+}
+/* end 专题详情 */

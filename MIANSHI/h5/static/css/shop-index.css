@@ -1,0 +1,354 @@
+/* 头部搜索框 */
+.search-box {
+  width: 100%;
+  position: relative;
+}
+.search-box .search-back {
+  float: left;
+  width: 30px;
+  height: 44px;
+  text-align: right;
+  cursor: pointer;
+}
+.search-box .search-back a {
+  line-height: 44px;
+  display: block;
+  font-size: 0;
+}
+.search-box .search-back a .img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.search-box .search-input {
+  padding: 0 48px 0 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+.search-box .search-input input {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding: 0 10px 0 55px;
+  margin-top: 7px;
+  border-radius: 18px;
+}
+.search-box .search-input .trigger {
+  position: absolute;
+  left: 40px;
+  top: 7px;
+  height: 30px;
+  overflow: hidden;
+}
+.search-box .search-input .trigger .default {
+  display: block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+}
+.search-box .search-input .trigger .default:after {
+  border: 5px solid transparent;
+  border-top: 5px solid #666;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 15px;
+  right: 11px;
+  top: 45%;
+  content: ' ';
+}
+.search-box .search-input .trigger ul {
+  background: #fff;
+  position: absolute;
+  top: 29px;
+  left: -6px;
+  border: 1px solid #ededed;
+}
+.search-box .search-input .trigger ul li a {
+  display: block;
+  width: 50px;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  border-bottom: 1px solid #ededed;
+  color: #999;
+}
+.search-box .search-input .trigger ul li:last-child a {
+  border: none;
+}
+.search-box .search-click {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  line-height: 44px;
+  width: 40px;
+  text-align: left;
+}
+.search-box .search-click a {
+  display: block;
+  color: #666;
+}
+.search-box .search-click a .img {
+  width: 20px;
+  display: block;
+  margin: 12px 0 0 6px;
+}
+/* end 头部搜索框 */
+
+/* 个人信息 */
+.shop-info {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  height: 70px;
+  cursor: pointer;
+}
+.shop-info .shop-info-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.shop-info .shop-info-bg .bg-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background: rgba(0,0,0,0.4);
+}
+.shop-info .shop-info-bg .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.shop-info .shop-info-txt {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0 10px 10px;
+  z-index: 10;
+}
+.shop-info .shop-info-txt .txt-item {
+  position: relative;
+  padding-left: 58px;
+  padding-right: 72px;
+  width: 100%;
+  height: 48px;
+  z-index: 9;
+}
+.shop-info .shop-info-txt .txt-item .shop-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0;
+  vertical-align: top;
+  border-radius: 24px;
+  line-height: 48px;
+}
+.shop-info .shop-info-txt .txt-item .shop-img .img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.shop-info .shop-info-txt .txt-item .shop-mes {
+  position: relative;
+}
+.shop-info .shop-info-txt .txt-item .shop-mes .name {
+  font-size: 15px;
+  height:24px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.shop-info .shop-info-txt .txt-item .shop-mes .score {
+  font-size: 12px;
+  display: block;
+  height: 24px;
+  line-height: 23px;
+  font-family: arial;
+}
+.shop-info .shop-info-txt .collection {
+  position: absolute;
+  right: 30px;
+  top: 8px;
+  z-index: 11;
+  width: 64px;
+  height:24px;
+  line-height: 24px;
+  font-size: 12px;
+  border-radius:24px;
+  color: #fff;
+  background-color: var(--themescolor);
+  cursor: pointer;
+  text-align: center;
+  font-family: arial;
+}
+.shop-info .shop-info-txt .collection .col-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 5px 0 0;
+  width: 12px;
+  height: 14px;
+  background-image: url('~@/static/images/like-w.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.shop-info .shop-info-txt .shop-account.cur .col-icon {
+  display: none;
+}
+/* end 个人信息 */
+
+.long-adv {
+  margin-top: 10px;
+}
+.long-adv .item {
+  display: block;
+  background: #fff;
+  position: relative;
+  font-size: 0;
+}
+.long-adv .item .img {
+  width: 100%;
+}
+.floor-tit {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  margin-top: 10px;
+}
+.floor-tit .tit-em {
+  display: block;
+  color: #999;
+  letter-spacing: 1px;
+  font-family: arial;
+  font-size: 12px;
+}
+/* .floor-tit .tit-span {
+  display: inline-block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 2px;
+  position: relative;
+  background: #fff;
+  padding: 0 15px;
+  letter-spacing: 3px;
+} */
+/* .floor-tit .tit-span:before ,
+.floor-tit .tit-span:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  background: #f1f1f1;
+  font-size: 0;
+  height: 1px;
+  width: 70px;
+  bottom: 8px;
+} */
+.floor-tit .tit-span:before {
+  left: -70px;
+}
+.floor-tit .tit-span:after {
+  right: -70px;
+}
+.shop-index .search-list {
+  padding-top: 0;
+}
+.shop-index .m-tabs .item .item-img {
+  display: block;
+  margin: 11px auto;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+}
+.shop-index .m-tabs .item .item-img .img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 分类搜索 */
+.classify-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  z-index: 85;
+  background: #f7f7f7;
+  height: 100%;
+  padding-top: 44px;
+  margin: 0 auto;
+  max-width: 750px;
+}
+.classify-search .classify-item {
+  background: #fff;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 13px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; 
+  position: relative;
+}
+.classify-search .classify-item:before {
+  content: " ";
+  display: block;
+  width: auto;
+  height: 1px;
+  background: #f1f1f1;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+}
+.classify-search .classify-item:last-child:before {
+  background: #fff;
+}
+.classify-search .classify-item .item-txt {
+  display: block;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+}
+.classify-search .classify-item .arr {
+  display: block;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  margin-top: 1px;
+}
+.classify-search .classify-item .arr .img {
+  width: 100%;
+  height: 100%;
+}
+.classify-search .classify-item.all {
+  margin: 10px 0;
+}
+.classify-search .classify-item.all:before {
+  background: #fff;
+}
+/* end 分类搜索 */

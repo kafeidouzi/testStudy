@@ -1,0 +1,282 @@
+/* 发表评论 */
+.write-comment .item-top {
+  background: #fff;
+  /* padding: 0 10px; */
+}
+.write-comment .first-comment .goods-score {
+  padding: 15px 0;
+  line-height: 18px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+}
+.write-comment .first-comment .goods-score .item {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+}
+.write-comment .first-comment .goods-score .item .icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.write-comment .first-comment .goods-score .item .great {
+  /* background: url('~@/static/images/great.png') no-repeat; */
+  background-size: 18px;
+}
+.write-comment .first-comment .goods-score .item .good {
+  /* background: url('~@/static/images/good.png') no-repeat; */
+  background-size: 18px;
+}
+.write-comment .first-comment .goods-score .item .not-good {
+  /* background: url('~@/static/images/not-good.png') no-repeat; */
+  background-size: 18px;
+}
+.write-comment .first-comment .goods-score .item.cur {
+  color: var(--themescolor);
+}
+.write-comment .first-comment .goods-score .item.cur .icon {
+  background-position-y: -18px;
+}
+.write-comment .first-comment .area {
+  line-height: 24px;
+  font-size: 14px;
+  margin: 8px 0 10px;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.write-comment .first-comment .file-img {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.write-comment .first-comment .file-img .add-img {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  border: 1px solid #f1f1f1;
+  text-align: center;
+  color: #999;
+  margin-right: 10px;
+  background: #fff;
+  position: relative;
+}
+.write-comment .first-comment .file-img .add-img:before {
+  content: " ";
+  padding-top: 100%;
+  display: block;
+  vertical-align: top;
+}
+.write-comment .first-comment .file-img .add-img .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.write-comment .first-comment .file-img .add-img .add-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ccc;
+  width: 100%;
+  font-size: 28px;
+  font-family: arial;
+}
+.write-comment .first-comment .file-img .add-img .del-img {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 15px;
+  height: 15px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+.write-comment .first-comment .file-img .add-img-tip {
+  color: #999;
+  line-height: 20px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.write-comment .store-score {
+  margin-top: 10px;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.write-comment .store-score .tit {
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.write-comment .store-score .tit .img {
+  width: 14px;
+  height: 14px;
+  vertical-align: top;
+  margin: 5px 8px 0 0;
+}
+.write-comment .store-score .item {
+  padding-bottom: 15px;
+  line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.write-comment .store-score .item .item-tit {
+  display: inline-block;
+  width: 128rpx;
+  text-align: justify;
+  /* vertical-align: top; */
+  vertical-align: middle;
+  margin: 1px 10px 0 0;
+  color: #999;
+}
+.write-comment .store-score .item .s-level {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  /* overflow: hidden; */
+}
+.write-comment .store-score .item .s-level .star {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  /* background: url('~@/static/images/starbig-gray.png') no-repeat; */
+  background-size: 18px;
+  margin-left: 20px;
+}
+.write-comment .store-score .item .s-level .star.cur {
+  /* background: url('~@/static/images/starbig.png') no-repeat; */
+  background-size: 18px;
+}
+/* end 发表评论 */
+
+/* 追评 */
+.review .pro-mes {
+  position: relative;
+  padding: 13px 0;
+  border-bottom: 10px solid #f1f1f1;
+}
+.review .pro-mes .pro-img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+}
+.review .pro-mes .pro-img .img {
+  width: 100%;
+  height: 100%;
+}
+.review .pro-mes .pro-name {
+  font-size: 14px;
+  margin-left: 80px;
+  position: relative;
+  height: 70px;
+}
+.review .pro-mes .pro-name .name {
+  max-height: 36px;
+  overflow: hidden;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  font-family: -apple-system,Helvetica,sans-serif;
+}
+.review .pro-mes .pro-name .star-box {
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  height: 12px;
+  /* width: 85px; */
+  /* background: url('~@/static/images/star-gray.png'); */
+  background-size: 17px 12px;
+}
+.review .pro-mes .pro-name .star-box .star {
+  display: block;
+  height: 12px;
+  /* width: 85px; */
+  /* background: url('~@/static/images/star.png'); */
+  background-size: 17px 12px;
+}
+.review .pro-mes .pro-name .star-box.star01 .star {
+  width: 20%;
+}
+.review .pro-mes .pro-name .star-box.star02 .star {
+  width: 40%;
+}
+.review .pro-mes .pro-name .star-box.star03 .star {
+  width: 60%;
+}
+.review .pro-mes .pro-name .star-box.star04 .star {
+  width: 80%;
+}
+.review .pro-mes .pro-name .star-box.star05 .star {
+  width: 100%;
+}
+.review .last-comment {
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+  padding: 10px 0 12px;
+  border-top: 1px solid #f1f1f1;
+}
+.review .last-comment .img {
+  display: block;
+  font-size: 0;
+}
+.review .last-comment .img .img {
+  width: 20%;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.review .add-txt {
+  padding: 10px;
+  background: #fff;
+  margin-top: 10px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.review .area {
+  line-height: 24px;
+  font-size: 14px;
+  height: 120px;
+  width: 100%;
+}
+/* end 追评 */
+
+.write-comment .first-comment .file-img .add-img .add-img-default {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  color: #ccc;
+  width: 100%;
+  font-size: 28px;
+  font-family: arial;
+}
+
+.pd-14{
+	padding: 14px;
+}
+

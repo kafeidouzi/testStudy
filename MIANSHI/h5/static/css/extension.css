@@ -1,0 +1,102 @@
+
+/* 申请推广成功 */
+.apply-extension {
+  padding: 0 10px;
+}
+.extension-suc {
+  padding: 40px 10px 20px;
+  text-align: center;
+}
+.extension-suc .img {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+.extension-suc .img .img {
+  width: 100%;
+  height: 100%;
+}
+.extension-suc .txt {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-left: 10px;
+}
+.extension-step .step-det {
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+}
+.extension-step .step-det .step-icon {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left: 5px solid var(--themescolor);
+}
+.extension-step .step-det .step-txt {
+  margin-left: 15px;
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+.extension-step .step-tit {
+  display: inline-block;
+  color: #999;
+  font-size: 12px;
+  width: 70px;
+}
+.extension-step .step-det .net {
+  text-decoration: underline;
+  display: inline-block;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  vertical-align: top;
+}
+.extension-step .step-det .code {
+  font-size: 0;
+  display: inline-block;
+  height: 100px;
+  vertical-align: middle;
+  width: 150px;
+}
+.extension-step .step-det .code .img {
+  width: 100px;
+  height: 100px;
+}
+.extension-step .step-det .copy {
+  display: inline-block;
+  color: var(--themescolor);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* end 申请成功 */
+
+/* 颜色配置 */
+.extension-step .step-det .copy {
+  color: var(--themescolor);
+}
+
+.extension-step .step-det .step-icon {
+  border-left-color: var(--themescolor);
+}

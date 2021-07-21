@@ -1,0 +1,165 @@
+/* 物流跟踪 */
+.logistics-msg {
+  background: #fff;
+  padding: 13px 10px;
+  position: relative;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.logistics-msg .msg-img {
+  width: 90px;
+  height: 90px;
+  font-size: 0;
+}
+.logistics-msg .msg-img img {
+  width: 100%;
+  height: 100%;
+}
+.logistics-msg .msg-det {
+  margin: 0 10px;
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+}
+.logistics-msg .msg-det .det-txt {
+  display: block;
+  line-height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 5px;
+  color: #999;
+}
+.logistics-msg .msg-det .det-txt .det-span {
+  margin-left: 5px;
+  color: #333;
+  font-family: arial;
+}
+.logistics-msg .msg-det .det-txt .det-span.cur {
+  color: var(--themescolor);
+}
+
+.logistics-follow {
+  background-color: #fff;
+  padding: 0 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.logistics-follow .follow-tit {
+  padding: 10px 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: #999;
+  border-bottom: 1px solid #f1f1f1;
+}
+.logistics-follow .follow-con {
+  padding: 10px 0;
+  margin-top: 5px;
+}
+.logistics-follow .follow-con .logistis-det {
+  padding-left: 20px;
+  position: relative;
+  border-left: 1px solid #f1f1f1;
+  margin: 0 10px;
+  line-height: 24px;
+  line-height: 24px;
+  width: 400rpx;
+  margin-left: 120rpx;
+  min-height: 100rpx;
+}
+.logistics-follow .follow-con .logistis-det:last-child {
+  border-color: #fff;
+}
+.logistics-follow .follow-con .logistis-det:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -9px;
+  top: 0;
+  z-index: 2;
+  
+}
+.logistics-follow .follow-con .logistis-det:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ccc;
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  z-index: 3;
+}
+.logistics-follow .follow-con .logistis-det .det-p {
+  font-size: 14px;
+  position: relative;
+}
+.logistics-follow .follow-con .logistis-det .det-p:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -29px;
+  top: 0;
+  z-index: 1;
+}
+.logistics-follow .follow-con .logistis-det .det-p .logistics-phone {
+  color: var(--themescolor);
+}
+.logistics-follow .follow-con .logistis-det .det-span {
+  color: #999;
+  font-size: 12px;
+  font-family: arial;
+  padding-bottom: 10px;
+  display: block;
+  margin-top: 5px;
+  line-height: 22px;
+  width: 63px;
+  text-align: right;
+  position: absolute;
+  top: -7px;
+  left: -78px;
+}
+.logistics-follow .follow-con .logistis-det.cur .det-p {
+  /* color: var(--themescolor); */
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  line-height: 20px;
+}
+.logistics-follow .follow-con .logistis-det.cur:before {
+  /* background: var(--themesrgba08); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(~@/static/images/receive-icon.png);
+}
+.logistics-follow .follow-con .logistis-det.curr:before {
+  /* background: var(--themesrgba08); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(~@/static/images/send-icon.png);
+}
+.logistics-follow .follow-con .logistis-det.cur:after {
+  background: rgba(222,222,222,0);
+}
+.logistics-follow .follow-con .logistis-det.curr:after {
+  background: rgba(222,222,222,0);
+}
+/* end 物流跟踪 */

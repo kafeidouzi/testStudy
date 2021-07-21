@@ -208,3 +208,141 @@ addData: {
 ### window.onload 和$(document).ready
 [https://upload-images.jianshu.io/upload_images/18473143-793c8e4736e035b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240]
 
+
+## puppeteer 
+1. puppeteer是一个chrome出品的一个无头浏览器（没有用户界面的浏览器），提供平高级API，通过DevTools Protocol来控制Chrome或者Chromium
+2. 用途：
+    + 网页截图，或生成的pdf
+    + 爬取SPA或者ssr网站
+    + 自动化提交表单，ui测试，键盘输入
+    + 创建一个最新的自动化测试环境。使用最新的js'和最新的Chrome浏览器运行测试用例
+    + 捕获网站的时间线，帮助诊断性能问题
+    + 测试Chrome插件
++ 与其他无头浏览器区别：
+    + 只支持chrome，可以模拟真实事件，支持在DevTools调试
+
+
+## babel的原理
+1. 什么是babel？ babel能够转译ECMAScript 2015+ 的代码，转换成能够在旧的浏览器或环境中运行。
+2. AST 抽象语法树
+    + AST的根节点始终都是Progrem，   以 const add = （a,b）=>a+b  为例
+    + 一个变量声明（variableDeclartion）:声明了一个name为add的箭头函数（ArrowFounctionExpression）
+    + params（函数参数） ： a 和 b
+    + 函数体： 函数主体是一个BinaryExpression(二项式),一个标准二项式分为三个部分：
+        1. left：a,
+        2. operator(运算符): + ，
+        3. right： b
+3. babel的工作过程：
+    + Parse（解析）：将源代码转换成更加抽象的表示方法（eg:抽象语法树）   ；parse包括（词法分析  和  语法分析）
+    + Transform(转换): 对（抽象语法树）做一些特殊处理，让他符合编译器的期望
+    + Generate(代码生成): 将第二步经过转换的抽象语法树生成新的代码
+    + 词法分析：就是将具体源码的每一项生成对象数组，语法分析就是经过处理将数组生成AST
+
+
+## GUI  图形用户界面
+
+###  js构造函数和原型链继承（优化后的）
+```
+function Parent() {
+    this.name = 'person'
+    this.play = [1,2,3]
+}
+
+Parent.prototype.say = function() {console.log('hahahah')}
+function Child () {
+    Parent.call(this)   // 构造函数
+    this.type = 'child'
+}
+Child.prototype = Object.create(Parent.prototype)
+Child.prototype.construtor = Child
+var s1 = new Child()
+
+
+```
+### js字符串转数字的方法
+    parseInt(string,radix)  string 被解析的字符串   radix 表示要解析的数字基数，默认是十进制。如果radix < 2 或者radix > 36,返回NaN
+### 箭头函数特性
+1. 箭头函数没this，它的this就是理他最近一层非箭头函数的this
+2. 箭头函数自己没有arguments对象，但它可以访问外围函数的arguments对象
+3. 不能通过new关键字调用，同样也没有new.target值和原型 
+
+### DOM模型事件，DOM0和DOM2级的区别，DOM的分级
+1. jsDOM事件三个阶段：  事件捕获阶段，处于目标阶段，事件冒泡阶段
+2. 对于绑定在元素的两个事件，一个用于捕获，一个用于冒泡，两个事件是按照  **绑定在被点击元素的事件是按照代码添加顺序执行的**  
+3. 
+   +  DOM0级事件是  onclick这类事件，一个元素只能绑定一个。**存的是一个地址**
+   + DOM2级事件  使用addEventListener,一个元素可以绑定多个事件。 **存的是一个数组，绑定事件会放在数组里挨个执行**
+
+### history 和 location
+1. history.pushState  和history.replaceState
+2. location.href       location.search  获取？后的字符串     location.hash    获取3后的内容
+
+### 常见四种函数类型
+1. 匿名函数   节约空间   （function(){})（）匿名函数自调  
+2. 回调函数
+3. 递归函数  严格模式  arguments.callee（）调用函数本身
+4. 构造函数
+### 变量提升和函数提升
+### 作用域和作用域链
+### 执行环境（执行上下文  EC）   全局执行环境  局部执行环境
+1. VO 变量对象   该对象储存生命在全局的变量
+2. AO  活动对象  该对象储存函数执行时，函数内生命的变量
+
+### 函数重载和多态
+1. 程序中可以定义相同名字，不同形式参数，函数在调用时自动识别不同参数对应函数进行执行
+
+### call,apply,bind    call,apply是直接执行   bind则需要一个中间变量来承接
+
+###  this 谁调用指向谁，局部函数this是window
+
+### 面向对象
+1. 含义：吧任何的数据和行为抽象成一个形象的对象，类似于人生活中思考的方式    （万物皆对象）
+
+2. 封装，继承，多态
+    + 继承：子继承父
+    + 封装：将一些公共的行为封装成一个方法
+    + 多态：重载，重写（子类重写父类方法）
+
+3. 对象 ，原型和原型链
+    + 对象    直接生成的普通对象和new出来的
+    + 原型和原型链（1，2，3）
+        1. 一句话： 万物皆对象，万物皆空（null）
+        2. 二个定义：原型：保存所有子对象的共有属性值和方法的父对象    原型链： 由各个子对象的__proto__属性连续引用形成的结构
+
+### filter 实现磨砂玻璃的效果（模糊）
+
+### Leaflet，mapBox, openlayer 地图使用相当nice，友好于移动端.(展开平面地图)
+
+### 前端代码规范
+1. 凹凸实验室 [https://guide.aotu.io/docs/index.html]
+
+### vuex持久化插件  vuex-persist  
+    + 其原理就是自动将state中的信息存储到storage或cookie中
+
+
+### vscode常用插件
+    postCode 
+    path Intellisense 
+    gitLens  
+    Auto Rename Tag
+    Autoprefixer
+    Beautify
+
+
+
+
+### Babel 解析语法树  ast  （词法分析 Lexical Analysis 和语法分析 Syntax Analysis ）
+
+1. ***词法分析**  ，也叫扫描器（scanner）,他会读取我们的source code中的每一个字节，转换成token（词法令牌），最后我们的源代码会编译成list of tokens （词法令牌列表）
+2. ***语法分析**  ，也叫parser（解析器），将词法分析器解析出来的list of tokens ，转换成一个树形节点。所有树形节点组合起来，就形成了混合语法树，虽不是和代码100%匹配，但包含了足够信息使解析器能够正确的处理代码
+
+### webpack混淆   webpack-obfuscator 
+
+### vue的diff和react的diff区别
+1.  相同： 都只做同级比较，忽略跨级
+2.  vue对比节点，若className不同，认为是不同类型元素，删除重建。 react则是看作相同节点，只修改属性
+3.  vue的列表对比，采用从两端到中间对比方式，react则是从左依次到右对比的方式，当一个集合，需要把左后一个元素移到第一个，react会将前面的元素依次后移，vue则是只将最后一个元素移到第一个。
+4. vue的data更新只更新自己，react组件state更新会更新自己及所有子组件。
+
+5. 注：vue和react都遵循 （1）拥有相同类型的两个组件产生的DOM结构也相似，不同类型的两个组件产生的DOM结构也不相同（2）对于同一级的子节点，通过分配唯一id进行区分
+

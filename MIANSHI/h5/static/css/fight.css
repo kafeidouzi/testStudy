@@ -1,0 +1,676 @@
+/*banner*/
+.fight .banner {
+  position: relative;
+  z-index: 1;
+}
+.fight .banner .img li {
+  float: left;
+}
+.fight .banner .img li a {
+  font-size: 0;
+  display: block;
+}
+.fight .banner .img li a img {
+  width: 100%;
+}
+/*end banner*/
+
+/* 拼团列表 */
+.fight .m-tabs .line-on .txt {
+  padding: 0;
+}
+.fight .search-list {
+  padding-top: 0;
+}
+.fight .fight-tit {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  padding: 7px 0;
+  box-sizing: border-box;
+  background: url('~@/static/images/tit-bg.png') center center no-repeat;
+  background-size: 160px 30px;
+}
+.fight .fight-tit .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.fight .ser-list .search-con .pro-mes {
+  padding: 12px 0;
+}
+.fight .ser-list .search-con .pro-mes .pro-name {
+  padding-top: 0;
+}
+.fight .ser-list .search-con .pro-mes .pro-name .name {
+  line-height: 20px;
+  max-height: 40px;
+}
+.fight .ser-list .search-con .pro-mes .pro-name .pro-price {
+  margin-top: 0;
+  height: 34px;
+  position: absolute;
+  bottom: 0;
+}
+.fight .ser-list .search-con .pro-mes .pro-name .pro-price .price {
+  height: 16px;
+}
+.fight .ser-list .search-con .pro-mes .pro-name .fight-num {
+  display: block;
+  color: #999;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fight .ser-list .search-con .pro-mes .build-fight {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  border: 1px solid var(--themescolor);
+  border-radius: 30px;
+  display: block;
+  padding: 3px 15px;
+  line-height: 18px;
+  font-size: 12px;
+  color: var(--themescolor);
+  background: #fff;
+}
+/* end 拼团列表 */
+
+/* 拼团详情 */
+
+/* 正在进行中的拼团 */
+.fighting {
+  padding: 0 15px;
+  background: #fff;
+  margin-top: 10px;
+  position: relative;
+  line-height: 24px;
+}
+.fighting .fighting-tit {
+  padding: 10px 0 0;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; 
+}
+.fighting .fighting-tit .fl {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+  font-size: 14px;
+}
+.fighting .fighting-tit .fr {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+.fighting .fighting-tit .fr .img {
+  width: 14px;
+  height: 14px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+.fighting .fighting-item {
+  padding: 10px 0;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+}
+.fighting .fighting-item:last-child {
+  border: 0;
+}
+.fighting .fighting-item .item-con {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.fighting .fighting-item .item-con .person {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 40px;
+  color: #999;
+}
+.fighting .fighting-item .item-con .person .per-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  margin-right: 10px;
+}
+.fighting .fighting-item .item-con .person .per-img .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fighting .fighting-item .item-con .rest-time {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 40px;
+  margin-left: 7px;
+  color: #999;
+}
+.fighting .fighting-item .item-con .rest-time .time {
+  color: var(--themescolor);
+  margin: 0 2px;
+}
+.fighting .fighting-item .item-btn {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid var(--themescolor);
+  height: 26px;
+  line-height: 20px;
+  border-radius: 26px;
+  color: var(--themescolor);
+  margin-top: 7px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+/* end 正在进行中的拼团 */
+
+/* 拼团玩法 */
+.fighting .fighting-item .item-rule {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}
+.fighting .fighting-item .item-rule:first-child {
+  text-align: left;
+}
+.fighting .fighting-item .item-rule .num {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  font-size: 12px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  color: #999;
+  margin-right: 3px;
+  vertical-align: top;
+  margin-top: 4px;
+  text-align: center;
+  font-family: arial;
+}
+.fighting .fighting-item .item-rule.cur {
+  color: var(--themescolor);
+}
+.fighting .fighting-item .item-rule.cur .num {
+  border-color: var(--themescolor);
+  color: var(--themescolor);
+}
+/* end 拼团玩法 */
+
+/* 拼团按钮 */
+.det-foot .foot-box .right .add-cart ,
+.det-foot .foot-box .right .buy-now {
+  padding: 5px 0;
+  line-height: 16px;
+}
+.det-foot .foot-box .right .price {
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+.det-foot .foot-box .right .price .now {
+  font-size: 16px;
+  color: #fff;
+}
+.det-foot .foot-box .right .txt {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.6;
+}
+/* end 拼团按钮 */
+
+/* end 拼团详情 */
+
+/* 参与拼团 */
+.part-in-fight .ser-list .search-con .pro-mes .pro-name .name {
+  max-height: 40px;
+  line-height: 20px;
+  height: 40px;
+}
+.part-in-fight .ser-list .search-con .pro-mes .pro-name .pro-price {
+  margin-top: 10px;
+}
+.part-in-fight .ser-list .search-con .pro-mes .pro-name .old-price {
+  vertical-align: top;
+  margin-left: -3px;
+}
+.part-in-fight .btn-box {
+  /* margin: 20px 30px 0; */
+}
+.part-in-fight .btn-box .btn {
+  display: block;
+  height: 38px;
+  line-height: 36px;
+  border-radius: 36px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid var(--themescolor);
+  background: #fff;
+  color: var(--themescolor);
+  margin-bottom: 10px;
+}
+.part-in-fight .btn.cur {
+  background: var(--themescolor);
+  color: #fff;
+}
+/* end 参与拼团 */
+
+/* 开团成功 */
+.fight-suc {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px 15px;
+  position: relative;
+}
+.fight-suc .fight-suc-icon {
+  position: absolute;
+  right: 15px;
+  top: -48px;
+  color: var(--themescolor);
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid var(--themescolor);
+  border-radius: 50%;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.fight-suc .fight-suc-icon .txt {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid var(--themescolor);
+  border-radius: 50%;
+  display: block;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 16px;
+}
+.fight-suc .fight-suc-icon.fail ,
+.fight-suc .fight-suc-icon.fail .txt {
+  color: #bbb;
+  border-color: #ccc;
+}
+.fight-suc .suc-tit {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.fight-suc .suc-tit .fight-state {
+  color: var(--themescolor);
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 3px;
+}
+.fight-suc .suc-tit .f-num {
+  font-size: 13px;
+}
+.fight-suc .suc-tit .f-num .num {
+  color: var(--themescolor);
+  margin: 0 2px;
+}
+.fight-suc .suc-time {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #999;
+  line-height: 20px;
+}
+.fight-suc .suc-time .time-box {
+  color: var(--themescolor);
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.fight-suc .suc-time .time-box .time-item {
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0 5px;
+  color: var(--themescolor);
+  font-size: 15px;
+  font-family: arial;
+}
+.fight-suc .suc-partner {
+  background: #fff;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  margin-right: -15px;
+  margin-bottom: 10px;
+}
+.fight-suc .suc-partner .par-item {
+  display: block;
+  width: 20%;
+  max-width: 80px;
+  margin-top: 10px;
+}
+.fight-suc .suc-partner .par-item .item-box {  
+  margin-right: 15px;
+  text-align: center;
+  font-size: 0;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  position: relative;
+}
+.fight-suc .suc-partner .par-item .item-box:before {
+  content: " ";
+  padding-top: 100%;
+  display: block;
+  vertical-align: top;
+}
+.fight-suc .suc-partner .par-item .item-box .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fight-suc .suc-partner .par-item .item-box .add-par {
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #999;
+  width: 100%;
+}
+.fight-suc .suc-partner .par-item .item-box .par-head {
+  font-size: 11px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #fff;
+  background: var(--themescolor);
+  padding: 0 5px;
+  border-radius: 12px;
+  font-family: arial;
+}
+.fight-success .fight-foot .btn .price {
+  font-size: 14px;
+}
+/* end 开团成功 */
+
+/* 邀请好友拼团 */
+.popup-hide .popup-small-box {
+  width: 90%;
+  max-width: 450px;
+}
+.invite-fight {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.invite-fight .close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  /* background: url('~@/static/images/close.png') no-repeat center; */
+  background-size: auto auto;
+  position: absolute;
+  right: -9px;
+  top: -14px;
+  background-size: 16px 16px;
+  cursor: pointer;
+  border-radius: 0 5px 0 0;
+}
+.invite-fight .invite-img {
+  padding: 20px 0 10px;
+  font-size: 0;
+  text-align: center;
+}
+.invite-fight .invite-img img {
+  max-width: 100%;
+  max-height: 200px;
+}
+.invite-fight .invite-txt {
+  position: relative;
+  height: 120px;
+}
+.invite-fight .invite-txt .fl {
+  margin-right: 105px;
+  text-align: left;
+}
+.invite-fight .invite-txt .fl .friend-info {
+  line-height: 20px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.invite-fight .invite-txt .fl .friend-info .fri-img {
+  display: block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+}
+.invite-fight .invite-txt .fl .friend-info .fri-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.invite-fight .invite-txt .fl .friend-info .fri-txt {
+  padding-top: 5px;  
+  margin-left: 5px;
+  text-align: left;
+  font-size: 12px;
+  color: #999;
+  height: 45px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1; 
+  flex: 1;
+}
+.invite-fight .invite-txt .fl .friend-info .name {
+  color: #999;
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+.invite-fight .invite-txt .fl .pro-info {
+  max-height: 40px;
+  margin-top: 7px;
+  line-height: 20px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+.invite-fight .invite-txt .fl .fight-price {
+  margin-top: 4px;
+}
+.invite-fight .invite-txt .fl .fight-price .price {
+  color: var(--themescolor);
+  font-size: 12px;
+}
+.invite-fight .invite-txt .fl .fight-price .price .now {
+  font-size: 14px;
+  color: var(--themescolor);
+}
+.invite-fight .invite-txt .fl .fight-price .old-price {
+  margin-left: 5px;
+}
+.invite-fight .invite-txt .fr {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.invite-fight .invite-txt .fr .invite-code {
+  width: 95px;
+  height: 95px;
+  font-size: 0;
+}
+.invite-fight .invite-txt .fr .invite-code img {
+  width: 100%;
+  height: 100%;
+}
+.invite-fight .invite-txt .fr .code-tip {
+  color: #999;
+  text-align: center;
+  width: 95px;
+  line-height: 20px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+/* end 邀请好友拼团 */
+
+/* 拼团成功 */
+.fight-list .list-item.suc-item .sign-suc {
+  position: absolute;
+  right: 20px;
+  top: 55%;
+  color: #45be89;
+  border: 2px solid #45be89;
+  border-radius: 2px;
+  padding: 3px 10px;
+  -moz-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  font-size: 18px;
+}
+/* end 拼团成功 */
+
+/* 拼团玩法 */
+.fight-rule {
+  padding: 10px 0 0 15px;
+}
+.fight-rule .rule-item {
+  position: relative;
+  background: #fff;
+  border-left: 2px solid var(--themescolor);
+  padding-bottom: 15px;
+}
+.fight-rule .rule-item:first-child:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 16px;
+  background: #fff;
+  position: absolute;
+  left: -7px;
+  top: 0;
+  z-index: 1;
+}
+.fight-rule .rule-item .rule-step {
+  padding: 10px 15px 10px 15px;
+  font-size: 14px;
+  font-family: arial;
+  line-height: 24px;
+  position: relative;
+}
+.fight-rule .rule-item .rule-step:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--themescolor);
+  position: absolute;
+  left: -7px;
+  top: 16px;
+}
+.fight-rule .rule-item .rule-con {
+  font-size: 0;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  margin: 0 15px;
+  height: 139.7px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.fight-rule .rule-item .rule-con .img {
+  max-width: 100%;
+  height:100%;
+  /* width: 420px;
+  height: 180px; */
+}
+.fight-rule .rule-item .suc {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  /* background: url('~@/static/images/fight-rule06.jpg') no-repeat; */
+  background-size: 1rem;
+  position: absolute;
+  right: -0.24rem;
+  top: -0.24rem;
+}
+.fight-rule .rule-item .suc .img {
+  width: 50px;
+  height: 50px;
+}
+.fight-rule .rule-item .fai {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  /* background: url('~@/static/images/fight-rule07.jpg') no-repeat; */
+  background-size: 1rem;
+  position: absolute;
+  right: -0.24rem;
+  top: -0.24rem;
+}
+.fight-rule .rule-item .fai .img{
+  width: 50px;
+  height: 50px;
+}
+.fight-rule .rule-item .rule-des {
+  margin: 0 15px;
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+}
+/* end 拼团玩法 */

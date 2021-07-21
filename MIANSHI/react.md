@@ -61,5 +61,42 @@ compose(funcA(funcB(funcC())))
   5. 与componentDidMount和componentDidUpdate不同，useEffect的函数会在浏览器完成布局与绘制之后，延迟调用。
   6. 并非所有的effect都会被延迟调用，当在用户可见的界面更新dom时，就要同步，这样才不会给用户视觉上的不一致。react提供了一个额外的hook，
   useLayoutEffect，它与useEffect结构一样，只是调用时机不一样
+#### useLayoutEffect 和 useEffect 区别
+  1. useEffect相对于class的componentDidMount和componentDidUpdate（他俩会在render结束后立即执行，是同步的）不同，它算是异步的一个行为；大部分场景下都比class的方式性能好
+  2. useLayoutEffect：当useEffect里面的操作需要处理dom时，并且会改变页面样式。此时useEffect就可能出现闪屏。而useLayoutEffect里面的callback函数会在dom更新后立即执行，但是会在浏览器进行任何绘制之前完成，阻塞浏览器绘制
+### react hooks   （他只是一个数组，数组之间有对应的应得映射关系，响应的state数组对应其响应的set数组）
+#### react hooks 使用原则：
+  1. 不要在循环，条件判断，函数嵌套中使用hooks （可能造成对应关系紊乱）
+  2. 只能在函数组件中使用
+#### react hooks 的简单实现
+```
+let state = [];
+let setters = [];
+let firstRun = true;
+let cursor = 0;
+
+function createSetter(cursor) {
+  return function setterWithCursor(newVal) {
+    state[cursor] = newVal;
+  };
+}
+
+// This is the pseudocode for the useState helper
+export function useState(initVal) {
+  if (firstRun) {
+    state.push(initVal);
+    setters.push(createSetter(cursor));
+    firstRun = false;
+  }
+
+  const setter = setters[cursor];
+  const value = state[cursor];
+
+  cursor++;
+  return [value, setter];
+}
+```
+#### react hooks的优点
+  1. 复用性强
+  2. 代码量更少
   
- 

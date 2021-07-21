@@ -1,0 +1,54 @@
+/* 常见问题 */
+.custombackground {
+	background-color: #f5f5f5;
+}
+.question {
+	padding-left: 28rpx;
+	background: #fff;
+}
+.question .item {
+    border-bottom: 1px solid #f1f1f1;
+}
+.question .item:last-child {
+	border-bottom: 0;
+}
+.question .item .entry-con-tit .entry-con {
+	padding-left: 0;
+	padding-right: 28rpx;
+}
+.question .item .entry-con-tit .entry-con .con-box {
+  border-bottom: 0;
+  padding: 28rpx 0;
+}
+.question .item.cur .entry-con-tit .entry-con .con-box .arr {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.question .item .entry-con-select {
+  border-top: 1px solid #f1f1f1;
+  display: none;
+}
+.question .item.cur .entry-con-select {
+  display: block;
+}
+.question .item .entry-con-select .entry-con {
+  font-size: 12px;
+  /* background: #f9f9f9; */
+  word-break: break-all;
+  padding-left: 0;
+  padding-right: 28rpx;
+}
+.question .item .entry-con-select .entry-con .con-box {
+  border-bottom: 1px solid #eee;
+}
+.question .item .entry-con-select .entry-con:last-child  .con-box{
+  border-bottom: 0;
+}
+.question .item .entry-con-select .entry-con .con-box .entry-name {
+  font-size: 12px;
+  color: #666;
+}
+
+/* end 常见问题 */
+

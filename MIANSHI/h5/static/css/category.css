@@ -1,0 +1,257 @@
+/* 分类 */
+.category {
+    /* height: auto;
+  
+  margin-bottom: 50px; */
+    display: flex;
+    position: absolute;
+    /* top: 0px; */
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    /* overflow-y: auto; */
+    margin-top: 0px;
+    border-top: 1px solid #eee;
+    /* padding-top: 88upx; */
+}
+
+/* 左边栏 */
+.category .category-tab {
+    float: left;
+    width: 86px;
+    flex: 0 0 86px;
+    background: #f6f7f8;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    /* overflow-y: auto; */
+    min-height: 100%;
+    /* height: calc(100vh - 97px); */
+}
+.category .category-tab .c-tab-ul {
+    transition: all 0.2s ease 0s;
+    width: 85px;
+}
+.category .category-tab .c-tab-ul .item {
+    width: 86px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+.category .category-tab .c-tab-ul .item.cur:before {
+    content: " ";
+    display: block;
+    width: 4px;
+    height: 24px;
+    background: #d12f1a;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.category .category-tab .c-tab-ul .item .item-a {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+}
+.category .category-tab .c-tab-ul .item.cur .item-a {
+    background: #fff;
+    font-weight: 600;
+    color: #d12f1a;
+    font-size: 14px;
+}
+/* end 左边栏 */
+
+.category .category-con {
+    /* height: auto; */
+    flex: 1;
+    min-height: 100%;
+    width: 100%;
+    font-size: 12px;
+    color: #252525;
+    background: #fff;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+.category .category-con .con-box {
+    /* margin-left: 86px; */
+    /* overflow-y: auto; */
+    /* padding-bottom: 50px; */
+}
+
+/* 大图 */
+.category .category-con .con-box .first-item {
+    width: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin: 15px 10px 0;
+}
+.category .category-con .con-box .first-item .item-a {
+    display: block;
+    font-size: 0;
+    width: 100%;
+}
+.category .category-con .con-box .first-item .item-a img {
+    max-width: 100%;
+}
+/* end 大图 */
+
+/* 一级分类商品列表 */
+.category .category-con .con-box .ser-list {
+    padding-top: 0;
+}
+.category .category-con .con-box .ser-list .search-con .pro-mes .pro-img {
+    width: 75px;
+    height: 75px;
+}
+.category .category-con .con-box .ser-list .search-con .pro-mes .pro-name {
+    height: 75px;
+}
+.category .category-con .con-box .ser-list .search-con .pro-mes .pro-name .name {
+    max-height: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+.category .category-con .con-box .ser-list .search-con .pro-mes .sku {
+    color: #999;
+    display: block;
+    line-height: 14px;
+    margin-top: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.category .category-con .con-box .ser-list .search-con .pro-mes:after {
+    content: " ";
+    display: block;
+    width: auto;
+    height: 1px;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    background: #f1f1f1;
+}
+/* 一级分类商品列表 */
+
+/* 二、三级分类公用,二级分类没有标题 */
+.category .category-con .con-box .second-item {
+	margin: 15px 14px 10px 4px;
+}
+.category .category-con .con-box .second-item .second-tit {
+    height: 14px;
+    line-height: 14px;
+}
+.category .category-con .con-box .second-item .second-tit .second-category {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+	margin-left: 10px;
+}
+.category .category-con .con-box .second-item .second-list {
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.category .category-con .con-box .second-item .second-list .item {
+    text-align: center;
+    width: calc(33.33% - 10px);
+    box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.category .category-con .con-box .second-item .second-list .item .item-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 76px;
+    font-size: 0;
+}
+@media screen and (max-width: 374px) {
+    .category .category-con .con-box .second-item .second-list .item .item-img {
+        width: 58px;
+        height: 58px;
+    }
+}
+.category .category-con .con-box .second-item .second-list .item .item-img .img {
+    width: 100%;
+    height: 100%;
+}
+.category .category-con .con-box .second-item .second-list .item .item-txt {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-top: 8px;
+}
+/* 二、三级分类公用,二级分类没有标题 */
+
+/* 无图模式 */
+.no-picture {
+    padding: 10px;
+}
+.no-picture .c-box {
+    padding-bottom: 10px;
+}
+.no-picture .c-box .c-tit {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+    margin-top: 10px;
+}
+.no-picture .c-box .c-content {
+    padding: 0 5px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.no-picture .c-box .c-content .c-item {
+    padding: 0 5px;
+    text-align: center;
+    flex: 0 0 33.3%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.no-picture .c-box .c-content .c-item .txt {
+    display: block;
+    color: #666;
+    background: #f2f2f7;
+    height: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+/* end 无图模式 */
+
+/* end 分类 */

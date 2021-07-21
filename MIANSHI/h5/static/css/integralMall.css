@@ -1,0 +1,700 @@
+.bk-color {
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+/* 预存款 */
+.pre-deposit .balance {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 86px;
+    padding: 25px 0;
+    background: #2e2e2e;
+}
+.pre-deposit .balance .pre-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    z-index: 10;
+}
+.pre-deposit .balance .pre-bg .img {
+    width: 100%;
+    height: 100%;
+}
+.pre-deposit .balance .num {
+    position: relative;
+    z-index: 15;
+    text-align: center;
+    font-size: 40px;
+    font-family: arial;
+    color: #fff;
+    height: 25px;
+    line-height: 34px;
+    margin-top: 10px;
+}
+.pre-deposit .balance .num .price {
+    font-size: 32px;
+    line-height: 25px;
+}
+.pre-deposit .balance .txt {
+    position: relative;
+    z-index: 15;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: arial;
+}
+.pre-deposit .state {
+    background: #fff;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 0;
+    text-align: center;
+}
+.pre-deposit .state .item {
+    width: 50%;
+    position: relative;
+    line-height: 20px;
+}
+.pre-deposit .state .item:first-child:after {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: auto;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: -1px;
+    background: #e4e4e4;
+}
+.pre-deposit .state .item .num {
+    display: block;
+    font-family: arial;
+    font-size: 12px;
+    height: 20px;
+    line-height: 23px;
+}
+.pre-deposit .state .item .num .price {
+    font-size: 16px;
+    line-height: 20px;
+}
+.pre-deposit .state .item .txt {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    font-family: arial;
+}
+/* end 预存款 */
+
+/* 充值 */
+.recharge {
+    background: #fff;
+    padding: 10px;
+    line-height: 22px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.recharge .num {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: arial;
+}
+.recharge .num::-webkit-input-placeholder {
+    font-size: 14px;
+}
+.recharge .num:-moz-placeholder {
+    font-size: 14px;
+}
+.recharge .num::-moz-placeholder {
+    font-size: 14px;
+}
+.recharge .num:-ms-input-placeholder {
+    font-size: 14px;
+}
+.recharge .unit {
+    font-size: 18px;
+    font-family: arial;
+    height: 24px;
+    line-height: 24px;
+}
+/* end 充值 */
+
+/* 提现 */
+.withward {
+    background: #fff;
+    padding: 0 10px;
+}
+.withward .withward-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+    line-height: 30px;
+    font-size: 14px;
+}
+.withward .withward-item:last-child {
+    border: 0;
+}
+.withward .withward-item .item-tit {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    display: block;
+    vertical-align: top;
+    width: 70px;
+}
+.withward .withward-item .w-account {
+    margin-left: 80px;
+    display: block;
+}
+.withward .withward-item .w-account .img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.withward .withward-item .w-number {
+    padding: 0 85px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    border: 0;
+    font-family: arial;
+    font-size: 14px;
+}
+.withward .withward-item .w-all {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block;
+    height: 30px;
+    color: var(--themescolor);
+    font-size: 14px;
+    padding: 0 10px;
+}
+.withward .withward-item .w-code {
+    position: absolute;
+    padding-left: 10px;
+    border-left: 1px solid #f1f1f1;
+    height: 30px;
+    right: 3px;
+    top: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    border-radius: 2px;
+    font-size: 14px;
+}
+/* end 提现 */
+
+/* 账户明细 */
+.account-det .account-det-list {
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+    background: #fff;
+    line-height: 20px;
+    font-size: 14px;
+}
+.account-det .account-det-list .item {
+    position: relative;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    line-height: 24px;
+}
+.account-det .account-det-list .item:after {
+    content: " ";
+    display: block;
+    width: auto;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f1f1f1;
+}
+.account-det .account-det-list .item:last-child:after {
+    height: 0;
+}
+.account-det .account-det-list .item .item-left {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    margin-right: 10px;
+}
+.account-det .account-det-list .item .item-left .txt {
+    height: 24px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.account-det .account-det-list .item .item-left .time,
+.account-det .account-det-list .item .item-right .status {
+    display: block;
+    color: #999;
+    font-family: arial;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.account-det .account-det-list .item .item-right {
+    font-size: 12px;
+    text-align: right;
+}
+.account-det .account-det-list .item .item-right .price .now {
+    font-size: 16px;
+}
+.account-det .account-det-list .item.cur .item-right .price,
+.account-det .account-det-list .item.cur .item-right .price .now {
+    color: var(--themescolor);
+}
+/* end 账户明细 */
+
+/* 账单详情 */
+.bill .item {
+    padding: 10px;
+    background: #fff;
+}
+.bill .item .num {
+    font-size: 40px;
+    font-family: arial;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    line-height: 1;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+.bill .item .state {
+    line-height: 1;
+    font-size: 14px;
+    color: #999;
+    padding: 10px 0 15px;
+    text-align: center;
+}
+.bill .item .line {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 24px;
+    padding: 5px 0;
+    font-size: 14px;
+}
+.bill .item .line .left {
+    margin-right: 10px;
+    color: #999;
+}
+.bill .item .line .right {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    word-break: break-all;
+}
+/* end 账单详情 */
+
+/* 订单支付 */
+.order-pay .ord-pri {
+    line-height: 24px;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.order-pay .ord-pri .tit {
+    color: #666;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+}
+.order-pay .ord-pri .price {
+    color: var(--themescolor);
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.order-pay .ord-pri .price .now {
+    font-size: 16px;
+    color: var(--themescolor);
+}
+.order-pay .way-tit {
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+}
+.order-pay .pay-way {
+    background: #fff;
+    padding: 0 10px;
+}
+.order-pay .pay-way .item {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    line-height: 30px;
+    font-size: 14px;
+    border-top: 1px solid #f1f1f1;
+}
+.order-pay .pay-way .item:first-child {
+    border: 0;
+}
+.order-pay .pay-way .item .item-img {
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+.order-pay .pay-way .item .item-img .img {
+    width: 100%;
+    height: 100%;
+}
+.order-pay .pay-way .item .item-con {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    margin: 0 10px;
+}
+.order-pay .pay-way .item .item-con .bal {
+    color: #999;
+    font-size: 12px;
+}
+.order-pay .pay-way .item .choose {
+    display: block;
+    font-size: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+    background: url("~@/static/images/choose.png") no-repeat;
+    background-size: 18px 18px;
+}
+.order-pay .pay-way .item .choose.cur {
+    background: url("~@/static/images/choosed.png") no-repeat;
+    background-size: 18px 18px;
+    border-radius: 50%;
+    background-color: var(--themescolor);
+}
+.order-pay .pay-way .bal-sel {
+    padding: 0 10px 15px 40px;
+}
+.order-pay .pay-way .bal-sel .sel-inp {
+    border: 1px solid #dedede;
+    height: 26px;
+    width: 150px;
+    padding-left: 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.order-pay .pay-way .bal-sel .sure {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 26px;
+    color: #fff;
+    background: var(--themescolor);
+    padding: 0 10px;
+    border-radius: 2px;
+    margin-left: 7px;
+    font-size: 12px;
+}
+
+.order-pay .pay-way .bal-sel .combine {
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+    color: #999;
+}
+
+.order-pay .pay-way .bal-sel .combine .price {
+    color: var(--themescolor);
+    margin: 0 2px;
+    font-weight: 600;
+}
+
+.order-pay .pay-way .bal-sel .combine .price .now {
+    color: var(--themescolor);
+}
+/* end 订单支付 */
+
+/* 我的推广 */
+.get-list {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #f0f2f5;
+}
+.get-list .left {
+    float: left;
+    line-height: 20px;
+}
+.get-list .left dt {
+    font-size: 13px;
+}
+.get-list .left dd {
+    color: #999;
+}
+.get-list span {
+    float: right;
+    line-height: 40px;
+    font-size: 13px;
+    display: block;
+    max-width: 60%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+}
+/* end 我的推广 */
+
+/* 积分商城 */
+.banner {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.banner .img li {
+    width: 100%;
+    float: left;
+}
+.banner .img .li {
+    width: 100%;
+    font-size: 0;
+    display: block;
+}
+.banner .img .li .img {
+    width: 100%;
+}
+
+.integral-balance {
+    background: #fff;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+}
+.integral-balance .num {
+    flex: 1;
+    display: block;
+    color: #DC231E;
+    font-size: 16px;
+    background-size: 16px;
+    font-family: verdana;
+    height: 24px;
+}
+.integral-balance .arr {
+    color: #999;
+    font-size: 14px;
+}
+.integral-balance .arr .img {
+    display: inline-block;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
+	margin-left: 10px;
+}
+.integral-goods {
+    /* margin-top: 10px; */
+}
+.integral-goods .goods-tit {
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    padding: 7px 0;
+    background: url("~@/static/images/tit-bg.png") #fff center center no-repeat;
+    background-size: 160px 30px;
+}
+.integral-goods .pro-list .pro-box .pro-name {
+    height: 18px;
+    -webkit-line-clamp: 1;
+}
+.integral-goods .pro-list .pro-box .integral-price {
+    margin: 8px 10px 0;
+    background: #fff;
+    line-height: 17px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #999;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.integral-goods .pro-list .pro-box .integral-price .price-span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+.integral-goods .pro-list .pro-box .integral-price .price-span:last-child {
+    text-align: right;
+}
+.integral-goods .pro-list .pro-box .integral-price .price-span .price {
+    color: var(--themescolor);
+    font-family: arial;
+    font-size: 14px;
+    margin-right: 2px;
+}
+.integral-goods .pro-list .pro-box .integral-price .price-span .num {
+    font-family: arial;
+    font-size: 14px;
+    margin-right: 2px;
+}
+/* end 积分商城 */
+
+/* 积分规则 */
+.integral-rule {
+    padding: 5px 10px 10px;
+    background: #fff;
+}
+.integral-rule .item {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 24px;
+}
+.integral-rule .item .rule-tit {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.integral-rule .item .rule-txt {
+    font-size: 12px;
+    color: #999;
+    font-family: arial;
+}
+/* end 积分规则 */
+
+/* 推广业绩 */
+.extension-achievement .extension-num {
+    color: #fff;
+    padding: 20px 10px;
+    background: -webkit-linear-gradient(right, #1998ff, #6082ff);
+    background: -o-linear-gradient(left, #1998ff, #6082ff);
+    background: -moz-linear-gradient(left, #1998ff, #6082ff);
+    background: linear-gradient(to left, #1998ff, #6082ff);
+}
+.extension-achievement .extension-num .item-txt {
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    width: 49%;
+    position: relative;
+}
+.extension-achievement .extension-num .item-txt:first-child:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #fff;
+    position: absolute;
+    right: -2%;
+    top: 25%;
+    opacity: 0.6;
+}
+.extension-achievement .extension-num .item-txt .txt-num {
+    display: block;
+    font-family: arial;
+    font-size: 24px;
+    line-height: 22px;
+}
+.extension-achievement .extension-num .item-txt .txt-span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+.extension-achievement .add-up {
+    padding: 10px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.extension-achievement .add-up .txt {
+    color: #999;
+}
+.extension-achievement .add-up .price {
+    font-size: 12px;
+}
+.extension-achievement .add-up .price .now {
+    font-size: 16px;
+}
+.extension-achievement .extension-record {
+    background: #fff;
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+.extension-achievement .extension-record .tit,
+.extension-achievement .extension-record .con .item {
+    padding: 10px 0;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.extension-achievement .extension-record .con .item {
+    border-top: 1px solid #f1f1f1;
+    font-size: 12px;
+}
+.extension-achievement .extension-record .tit .item,
+.extension-achievement .extension-record .con .item .item-span {
+    display: block;
+    width: 33.33%;
+}
+.extension-achievement .extension-record .con .item .item-span {
+    color: #999;
+    font-family: arial;
+}
+/* end 推广业绩 */

@@ -1,0 +1,50 @@
+/* 为空 */
+.empty {
+  padding: 1rem 0;
+  text-align: center;
+  background: #fff;
+}
+.empty .item-img {
+  width: 356px;
+  height: 215px;
+  margin: auto;
+  font-size: 0;
+  line-height: 100px;
+  /* border: 1px dashed #DEDEDE; */
+}
+.empty .item-img .img {
+  width: 310px;
+  height: 185px;
+  /* margin: 30px auto; */
+  margin-top: 30px;
+}
+.empty .item-txt {
+  font-size: 14px;
+  margin-top: 30px;
+  color: #000;
+}
+.empty .item-btn {
+  padding: 8px 36px;
+  display: inline-block;
+  margin: 20px auto 0;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #DC231E;
+}
+/* end 为空 */
+
+
+/* .empty .item-btn {
+  background: #DC231E;
+} */
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,526 @@
+/* 客服聊天 */
+
+/* 聊天窗口 */
+.ser-chat-window {
+  width: 100%;
+  position: relative;
+}
+.ser-chat-window .ser-chat-list {
+  position: relative;
+  /* padding-bottom: 95px; */
+}
+.ser-chat-list .chat-item {
+  padding: 5px 10px;
+  display: block;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+}
+.chat-time {
+  text-align: center;
+  overflow: hidden;
+}
+.dialog-box {
+  margin-left: 13px;
+  padding: 7px 10px;
+  display: inline-block;
+  position: relative;
+  min-width: 16px;
+  min-height: 14px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  font-size: 14px;
+}
+.chat-time .dialog-box {
+  color: #999;
+  font-size: 12px;
+}
+.service {
+  position: relative;
+  text-align: left;
+}
+.customer {
+  position: relative;
+  text-align: right;
+}
+.service .dialog-box {
+  max-width: 72%;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+.customer .dialog-box {
+  margin: 0 13px 0 0;
+  color: #fff;
+  max-width: 72%;
+  background-color: var(--themescolor);
+  border: 1px solid var(--themescolor);
+  border-radius: 4px;
+}
+.system .dialog-box {
+  margin: 0 auto;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  width: 80%;
+  word-break: break-word;
+}
+.service .dialog-box::after ,
+.customer .dialog-box::after {
+  position: absolute;
+  top: 14px;
+  content: '';
+  z-index: 2;
+  right: -9px;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-width: 1px 1px 0 0;
+  border-color: #000;
+  border-style: solid;
+  background: -webkit-linear-gradient(225deg, #f00 50%, transparent 50%);
+  background: linear-gradient(225deg, #f00 50%, transparent 50%);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.service .dialog-box::after {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  top: 14px;
+  left: -4px;
+  border-color: #dedede;
+  background: -webkit-linear-gradient(225deg, #fff 50%, transparent 50%);
+  background: linear-gradient(225deg, #fff 50%, transparent 50%);
+}
+.customer .dialog-box::after {
+  right: -4px;
+  border-color: var(--themescolor);
+  background: -webkit-linear-gradient(225deg, var(--themescolor) 50%, transparent 50%);
+  background: linear-gradient(225deg, var(--themescolor) 50%, transparent 50%);
+}
+.chat-info .dialog-box {
+  padding: 10px 0 8px;
+}
+.chat-tpl .customer .dialog-box,
+.chat-risk .customer .dialog-box,
+.chat-info .customer .dialog-box,
+.chat-info .customer .dialog-box {
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  max-width: calc(100% - 12px) !important;
+}
+.chat-tpl .service .dialog-box,
+.chat-info .service .dialog-box,
+.chat-risk .service .dialog-box {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-width: calc(100% - 12px)!important;
+}
+.chat-tpl .dialog-box:after,
+.chat-info .dialog-box:after,
+.chat-risk .dialog-box:after {
+  display: none;
+}
+.chat-tpl .service .dialog-box,
+.chat-tpl .customer .dialog-box,
+.chat-risk .service .dialog-box,
+.chat-risk .customer .dialog-box {
+  padding-left: 11px;
+  padding-right: 11px;
+  max-width: calc(100% - 34px)!important;
+}
+.dialog-box .cont {
+  word-wrap: break-word;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  line-height: 20px;
+}
+.chat-txt .text-msg-wrap {
+  position: relative;
+  line-height: 20px;
+}
+.prev-chat-split {
+  padding: 3px 0 3px;
+  text-align: center;
+  position: relative;
+}
+.prev-chat-split .split-txt {
+  display: inline-block;
+  width: auto;
+  padding: 0 10px;
+  background: #f6f7f8;
+  position: relative;
+  z-index: 2;
+  vertical-align: top;
+  color: #999;
+  font-size: 12px;
+}
+.prev-chat-split:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  z-index: 1;
+  display: block;
+  height: 1px;
+  width: auto;
+  background: #ddd;
+}
+.chat-info .pro-msg {
+  padding: 0 10px;
+}
+.pro-msg {
+  background: #fff;
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pro-msg .img {
+  width: 62px;
+  height: 62px;
+  font-size: 0;
+}
+.pro-msg .img img {
+  width: 100%;
+  height: 100%;
+}
+.pro-msg .txt {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}
+.pro-msg .txt .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 18px;
+  word-wrap: break-word;
+  position: relative;
+  height: 36px;
+  color: #333;
+}
+.pro-msg .txt .other {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 6px;
+  position: relative;
+  font-size: 12px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pro-msg .txt .other .price {
+  display: block;
+  line-height: 22px;
+  color: var(--themescolor);
+  font-size: 12px;
+  font-weight: 400;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+}
+.pro-msg .txt .other .price .now {
+  font-size: 14px;
+  color: var(--themescolor);
+}
+.pro-msg .txt .other .state {
+  font-size: 12px;
+  color: var(--themescolor);
+  display: block;
+  line-height: 20px;
+  padding: 0 5px;
+  background: var(--themesrgba02);
+  border-radius: 2px;
+}
+.pro-msg .txt .other .state.can {
+  color: #999;
+  background: #f2f2f2;
+}
+.pro-msg .txt .other .ord-num {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  color: #999;
+}
+.pro-msg .txt .other .ord-num .num {
+  color: #333;
+}
+.pro-msg .txt .other .time {
+  color: #999;
+  display: block;
+  margin-left: 5px;
+}
+.reselection {
+  margin-top: 10px;
+  padding: 8px 0 2px;
+  border-top: 1px solid #ededed;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  color: #999;
+  font-size: 12px;
+}
+.reselection .res {
+  position: relative;
+  color: var(--themescolor);
+}
+.reselection .res:after {
+  margin-left: 8px;
+  content: " ";
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-top-color: var(--themescolor);
+  border-right-color: var(--themescolor);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.chat-tips .cont {
+  padding: 2px 10px;
+  text-align: center;
+  display: inline-block;
+  line-height: 20px;
+  background: #dce1e5;
+  color: #777;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+}
+/* end 聊天窗口 */
+
+/* 回复区 */
+.ser-reply-area {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+  background: #fff;
+  padding: 10px 0;
+  z-index: 3;
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.05);
+}
+.ser-reply-area .rep-txt {
+  margin: 0 48px 0 10px;
+  position: relative;
+}
+.ser-reply-area .rep-txt .rep-input {
+display: block;
+  width: 100%;
+  min-height:40px ;
+  max-height: 120px;
+  /* height: 40px; */
+  padding: 2px 5px 2px 15px;
+  
+  box-sizing: border-box;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 18px;
+  display: block;
+  background: #fafafa;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+}
+.ser-reply-area .rep-txt .rep-btn {
+  display: block;
+  position: absolute;
+  right: -38px;
+  top: 3px;
+  height: 28px;
+  width: 28px;
+  font-size: 0;
+  border-radius: 34px;
+  background: url('~@/static/images/enter.png') var(--themescolor) center no-repeat;
+  background-size: 24px 24px;
+}
+.ser-reply-area .rep-tool {
+  margin-top: 11px;
+}
+.ser-reply-area .rep-tool .rep-box{
+  overflow: hidden;
+}
+.ser-reply-area .rep-tool .tool-icon {
+  float: left;
+  display: block;
+  width: 25%;
+  height: 25px;
+  text-align: center;
+}
+.ser-reply-area .rep-tool .ser-like {
+  /* background: url('~@/static/images/ser-like.png') center no-repeat; */
+  background-size: 25px 25px;
+}
+.ser-reply-area .rep-tool .ser-liked {
+  /* background: url('~@/static/images/ser-liked.png') center no-repeat; */
+  background-size: 25px 25px;
+}
+.ser-reply-area .rep-tool .ser-img {
+  background: url('~@/static/images/ser-img.png') center no-repeat;
+  background-size: 25px 25px;
+}
+.ser-reply-area .rep-tool .ser-order {
+  background: url('~@/static/images/ser-order.png') center no-repeat;
+  background-size: 25px 25px;
+}
+.ser-reply-area .rep-tool .ser-goods {
+  background: url('~@/static/images/ser-goods.png') center no-repeat;
+  background-size: 25px 25px;
+}
+.ser-reply-area .rep-tool .ser-emoticon {
+  background: url('~@/static/images/ser-emoticon.png') center no-repeat;
+  background-size: 25px 25px;
+}
+/* end 回复区 */
+
+/* 弹层 */
+
+/* 服务评价弹层 */
+.popup-hide .pop-star {
+  padding: 1rem 0 0;
+}
+.popup-hide .pop-star .inf {
+  width: 180px;
+  height: 25px;
+  position: relative;
+  margin: 0 auto;
+  /* background: url('~@/static/images/bg_star-pop.png') repeat-x; */
+  background-size: 36px 50px;
+}
+.popup-hide .pop-star .inf span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 25px;
+  cursor: pointer;
+}
+.popup-hide .pop-star .inf span.sta-inf01 {
+  width: 20%;
+  z-index: 6;
+}
+.popup-hide .pop-star .inf span.sta-inf02 {
+  width: 40%;
+  z-index: 5;
+}
+.popup-hide .pop-star .inf span.sta-inf03 {
+  width: 60%;
+  z-index: 4;
+}
+.popup-hide .pop-star .inf span.sta-inf04 {
+  width: 80%;
+  z-index: 3;
+}
+.popup-hide .pop-star .inf span.sta-inf05 {
+  width: 100%;
+  z-index: 2;
+}
+.popup-hide .pop-star .inf span.click {
+  /* background: url('~@/static/images/bg_star-pop.png') 0 -25px repeat-x;  */
+  background-size: 36px 50px;
+}
+.popup-hide .pop-star .sub-btn {
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: var(--themescolor);
+  font-size: 14px;
+}
+/* end 服务评价弹层 */
+
+/* 订单和商品弹层 */
+.popup-hide .box-con {
+  padding: 10px;
+}
+.popup-hide .box-con .list-item {
+  padding: 10px 0;
+  border-top: 1px solid #f1f1f1;
+}
+.popup-hide .box-con .list-item:first-child {
+  border-top: 0;
+}
+.popup-hide .box-con .list-item .ord-time {
+  display: block;
+  line-height: 20px;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 12px;
+}
+.popup-hide .box-con .list-item .ord-time .ord-num {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  color: #999;
+  padding-right: 80px;
+  position: relative;
+}
+.popup-hide .box-con .list-item .ord-time .ord-num .num {
+  color: #333;
+}
+.popup-hide .box-con .list-item .ord-time .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #999;
+  display: block;
+  width: 72px;
+  text-align: right;
+  overflow: hidden;
+}
+/* end 订单和商品弹层 */
+
+/* end 弹层 */
+
+/* end 客服聊天 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

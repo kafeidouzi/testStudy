@@ -1,206 +1,303 @@
 <!DOCTYPE html>
-<!-- <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"
-	  xmlns="http://www.w3.org/TR/REC-html40"> -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>合同模板</title>
-    <style type="text/css">
-        @page {
-			size: 480mm 340mm;
-		}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        height: 500px;
+      } */
 
-		html, body, table, tr, th, td, thead, tbody, tfoot, p, span, div, h1, ul, li, strong {
-			margin: 0px;
-			padding: 0px;
-			border: none;
-			font-size: 12pt;
-			font-weight: 400;
-			font-style: normal;
-			text-decoration: none;
-			font-family: SimSun;
-			mso-generic-font-family: auto;
-			mso-font-charset: 134;
-			mso-number-format: "\@";
-			color: #000; /*font-size:12px;*/
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-            line-height: 1.8rem;
-		}
-        .main-div{
-            width: 50%;
-            margin: 20px auto;
-        }
-        .main-div h2{
-            width: 100%;
-            text-align: center;
-        }
-        .name-wrapper{
-            /* display: flex;
-            justify-content: space-between; */
-        }
-        .under-line{
-            text-decoration:underline;
-        }
-        .item-header{
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        table,table tr td {
-            border: 1px solid #000;
-            text-align: center;
-            border-collapse: collapse;
-        }
-        table{
-            margin-top: 15px;
-            width: 100%;
-        }
-        .order-wrapper{
-            display: flex;
-            justify-content: space-between;
-        }
-        .specs{
-            width: 20%;
-        }
-        .text-left{
-            text-align: left;
-        }
-        .two-indent{
-            text-indent: 2rem;
-        }
-        .article-footer{
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .footer-left{
-            margin-right: 30px;
-        }
+      .box {
+        position: relative;
+      }
+
+      .left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        background: green;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 200px;
+        background: red;
+      }
+
+      .middle {
+        margin-left: 200px;
+        margin-right: 200px;
+        background: black;
+      }
+      .giao{
+        background-color:yellow;
+        background-clip:padding-box;
+      }
+      .box1{
+        overflow: hidden;
+        display: flex;
+        height: 600px;
+      }
+      .ddddd{
+        /* padding-bottom: 9999px;
+        margin-bottom: -9999px; */
+      }
+      .triangle02{
+width: 0;
+height: 0;
+border-top: 50px solid blue;
+border-right: 50px solid red;
+border-bottom: 50px solid green;
+border-left: 50px solid yellow;
+}
     </style>
-</head>
-<body>
-    <!-- <div style="width: 800px;height: 400px;background: #000000;">
-        <div style="width: 300px;height: 400px;background: greenyellow;float: left;"></div>
-        <div style="width: 300px;height: 400px;background: red;float: left;margin-left: 30px;"></div>
+  </head>
+  <body>
+    <div class="triangle02"></div>
+    <div class="box1">
+      <div class="ddddd" style="background: red;">
+        <p>zdosihfds</p>
+        <p>zdosihfds</p>
+        <p>zdosihfds</p>
+        <p>zdosihfds</p>
+      </div>
+      <div class="ddddd" style="background: yellow;">
+        <p>zdosihfds</p>
+        <p>zdosihfds</p>
+      </div>
+    </div>
+    <!-- <div class="box">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right"></div>
     </div> -->
-    <article>
-        <div class="main-div">
-            <h2>网盒科技销售合同</h2>
-            <p class="name-wrapper">
-                <span class="under-line">甲方（买方）：山东分公司谷歌官方的</span>
-                <span>（以下简称“甲方”）</span>
-            </p>
-            <p class="name-wrapper">
-                <span class="under-line">乙方（卖方）：网盒科技（北京）有限公司</span>
-                <span>（以下简称“乙方”）</span>
-            </p>
-            <p class="item-header">一、甲方通过乙方一撕得商城小程序（以下简称“一撕得商城”）账号
-                <span class="under-line">17898340989</span>&nbsp;订购一撕得商城提供的如下产品/服务：</p>
-            <table>
-                <thead></thead>
-                <tbody>
-                    <span>
-                        <tr>
-                            <td colspan="7" class="text-left">订单编号：DD68746384633387563876</td>
-                            <!-- <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td> -->
-                        </tr>
-                        <tr>
-                            <td>序号</td>
-                            <td colspan="2" >产品名称</td>
-                            <!-- <td></td> -->
-                            <td>规格</td>
-                            <td>数量</td>
-                            <td>单价（元）</td>
-                            <td>总金额（元）</td>
-                        </tr>
-                        <span>
-                            <tr>
-                                <td>1</td>
-                                <td colspan="2">三国杀给个</td>
-                                <td class="specs">3微软微软的首付大概 乳房的法规的规定豆腐干大概
-                                    3微软微软的首付大概 乳房的法规的规定豆腐干大概3微软微软的首付大概 乳房的法规的规定豆腐干大概3微软微软的首付大概 乳房的法规的规定豆腐干大概3微软微软的首付大概 乳房的法规的规定豆腐干大概3微软微软的首付大概 乳房的法规的规定豆腐干大概3微软微软的首付大概 乳房的法规的规定豆腐干大概
-                                </td>
-                                <!-- <td></td> -->
-                                <td>133</td>
-                                <td>23</td>
-                                <td>12313</td>
-                            </tr>
-                        </span>
-                        <tr>
-                            <td colspan="2">优惠价格：</td>
-                            <!-- <td></td> -->
-                            <td>0元</td>
-                            <td>运费：</td>
-                            <td colspan="3">ds</td>
-                            <!-- <td></td>
-                            <td></td> -->
-                        </tr>
-                        <tr>
-                            <td colspan="3" class="text-left">订单合计人民币</td>
-                            <!-- <td></td>
-                            <td></td> -->
-                            <td colspan="4">
-                                <div class="order-wrapper">
-                                    <span>339元</span>
-                                    <span>（含13%增值税）</span>
-                                </div>
-                            </td>
-                            <!-- <td></td>
-                            <td></td>
-                            <td></td> -->
-                        </tr>
-                    </span>
-                    <tr>
-                        <td>总计</td>
-                        <td colspan="6" class="text-left">预付费：1231331元（其中现金部分2637274274元）</td>
-                        <!-- <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
-                    </tr>
-                </tbody>
-            </table>
-            <p class="item-header">二、产品订购与交付</p>
-            <p class="two-indent">1、产品订购：甲方自行在 一撕得商城下单订购，并在线支付货款或对公支付至乙方如下账户：</p>
-            <p class="two-indent">开户名称： 网盒科技（北京）有限公司</p>
-            <p class="two-indent">开户行： 招商银行股份有限公司北京丰台科技园支行</p>
-            <p class="two-indent">账号：110937426110401</p>
-            <p class="two-indent">2、发货时间：乙方收到全部货款后根据双方约定或一撕得商城展示交货时间发货，到货时间以物流/快递时效为准。</p>
-            <p class="two-indent">3、交货地点及运输方式：交货地点以甲方在订购产品时填写的收货地址为准，采用物流/快递运输，费用由甲方承担。</p>
-            <p class="two-indent">4、在甲方未按照约定支付全部费用之前, 乙方有权拒绝提供产品和/或服务支持。</p>
-            <p class="two-indent">5、发票:甲方可登陆 “一撕得商城”点击申请发票，乙方审核无误后将开具等额发票并邮寄给甲方。</p>
-            <p class="item-header">三、质量要求</p>
-            <p class="two-indent">1、乙方按以上订购产品清单，向甲方提供规格相符、数量相等的产品，乙方保证所提供的产品是全新的、未使用过的原厂正品，产品质量符合国家标准、行业标准及乙方企业标准。</p>
-            <p class="two-indent">2、乙方提供的所有单独包装的产品应具有原始的完好的标准包装。如遇交付产品的包装问题，或产品质量问题，甲方有权拒绝接收或要求更换。</p>
-            <p class="item-header">四、违约责任</p>
-            <p class="two-indent">1、乙方应按规定的时间交货和提供服务。甲方应按规定的时间付款。</p>
-            <p class="two-indent">2．如一方无正当理由而拖延交货、付款，双方同意以守约方的实际损失承担本合同的违约责任。</p>
-            <p class="item-header">五、其他</p>
-            <p class="two-indent">1、因本合同的签订、履行产生的一切争议，双方应首先进行友好协商，协商无法达成一致的，任何一方有权向被告方所在地法院诉讼解决。</p>
-            <p class="two-indent">2、本合同自双方签字并盖章后生效，双方权利义务履行完毕后，合同终止。</p>
-            <p class="two-indent">3、本合同一式两份，双方各执一份，具有同等法律效力。</p>
-            <p class="two-indent">4、本合同双方电子签名版本/线上确认版本及/或本合同的传真件/扫描件与本合同正本具有同等法律效力。</p>
-            <p>（以下无正文）</p>
-            <div class="article-footer">
-                <div class="footer-left">
-                    <p>甲&nbsp;方：但是u粉红色覅</p>
-                    <p>&nbsp;&nbsp;（盖章）</p>
-                    <p>日&nbsp;期：xxxx 年 xx 月 xx 日</p>
-                </div>
-                <div>
-                    <p>乙&nbsp;方：网盒科技（北京）有限公司</p>
-                    <p>&nbsp;&nbsp;（盖章）</p>
-                    <p>日&nbsp;期：xxxx 年 xx 月 xx 日</p>
-                </div>
-            </div>
-        </div>
-    </article>
-</body>
+    <!-- <form action="http://127.0.0.1:8888/idd" method="post">
+      <input type="text" name="username"
+      value="<script>alert('helloworld')</script>">
+      <br>
+      <input type="password" name="password"
+      value="11">
+      <br>
+      <input type="checkbox" name="safe" id="safe" value="y"> 过滤 HTML 字符串
+      <br>
+      <button type="submit">注册</button>
+  </form> -->
+  <!-- <div class="giao"></div> -->
+    <!-- <canvas width="800" height="800" id="myCanvas"></canvas> -->
+  </body>
+  <script>
+    // var c=document.getElementById("myCanvas");
+    // var ctx=c.getContext("2d");
+    // ctx.beginPath(); 
+    // ctx.moveTo(50,20);           // 创建起始点
+    // ctx.lineTo(100,20);          // 创建水平线 
+    // ctx.arcTo(150,20,150,70,50); // 创建弧
+    // ctx.lineTo(150,70);         // 创建垂直线
+    // ctx.arcTo(150,120,100,120,50); 
+    // ctx.lineTo(50,120);
+    // ctx.arcTo(0,120,0,70,50);
+    // ctx.lineTo(0,70); 
+    // ctx.arcTo(0,20,50,20,50);
+
+    // // ctx.stroke();
+    // // ctx.closePath();
+    // ctx.font="20px Georgia";
+    // ctx.fillText("Hello World!",10,50);
+    // ctx.fillStyle = ddd();
+    // ctx.fill();
+    // function ddd() {
+    //   // my_gradient=ctx.createLinearGradient(0,0,170,0);
+    //   // my_gradient.addColorStop(0,"black");
+    //   // my_gradient.addColorStop(0.5,"red");
+    //   // my_gradient.addColorStop(1,"white");
+    //   // return my_gradient
+    //   var ddd = ctx.createRadialGradient(75,50,5,90,60,100)
+    //   // var ddd = ctx.createLinearGradient(0,0,150,120)
+    //   ddd.addColorStop(0,'red')
+    //   ddd.addColorStop(1,'yellow')
+    //   console.trace('Hello');
+    //   return ddd
+    // }
+    // var arr = [14,6,9,1,11,5,3,2]
+    // function getMaxArea(val) {
+    //   var arr1 = []
+    //   var min = null
+    //   for(var i = 0;i<val.length-2;i++) {
+    //     var j = i+1
+    //     // console.log(val[j],j,val.length)
+    //     while(j<= val.length-1) {
+          
+    //       if(!val[j] ) {
+    //         // console.log(val[j])
+    //         break ;
+    //       }
+    //       var valSum = null
+    //       // 求最低位面积和
+    //       if(min != null) {
+    //         if(val[j]>min) {
+    //           valSum = min * (j+1)
+    //         } else {
+    //           min = val[j]
+    //           valSum = min * (j+1)
+    //         }
+    //       } else {
+    //         val[i] > val[j] ? min = val[j] : min = val[i]
+    //         valSum = min * (j+1)
+    //       }
+
+    //       if(min != null && val[j]>min) {
+    //         valSum = min * (j+1)
+    //       } else {
+    //         min = val[j]
+    //         valSum = min * (j+1)
+    //       }
+    //       if(arr1.length > 0 ){
+    //         if(valSum >arr1[0]){
+    //           arr1.pop()
+    //           arr1.push(valSum)
+    //         }
+    //       } else {
+    //         arr1.push(valSum)
+    //       }
+    //       j++;
+    //       // console.log(arr1)
+    //     }
+    //   }
+    //   return arr1
+    // }
+    // // getMaxArea(arr)
+    // console.log(getMaxArea(arr))
+
+    // var rob = function(nums) {
+    //   const length = nums.length;
+    //   if (length === 1) {
+    //       return nums[0];
+    //   } else if (length === 2) {
+    //       return Math.max(nums[0], nums[1]);
+    //   }
+    //   return Math.max(robRange(nums, 0, length - 2), robRange(nums, 1, length - 1));
+    // };
+
+    // const robRange = (nums, start, end) => {
+    //   let first = nums[start], second = Math.max(nums[start], nums[start + 1]);
+    //   for (let i = start + 2; i <= end; i++) {
+    //       const temp = second;
+    //       second = Math.max(first + nums[i], second);
+    //       first = temp;
+    //   }
+    //   return second;
+    // }
+    // var num = [1,1,1,1,1,1,1,1,1]
+    // console.log(rob(num))
+    /**
+     * 货币格式化
+     * 
+     * **/
+    // function numInit(num) {
+    //   if(typeof num != 'number') {
+    //     throw new Error('请确保是一个数字')
+    //   }
+    //   num += ''
+    //   var numArr,resultArr = [],len,str = '';
+    //   numArr = num.split('')
+    //   len = numArr.length
+    //   for(i = len -1; i>=0;i--){
+    //     if(str.length < 3) {
+    //       console.log( i)
+    //       str += numArr[i]
+    //       if(str.length == 3 || i == 0) {
+    //         str = str.split('').reverse().join('')
+    //         resultArr.push(str)
+    //         str = ''
+    //       }
+    //     }
+    //   }
+    //   return resultArr.reverse().join(',')
+    // }
+    // console.log(numInit('sss'))
+    /**
+     * 判断给你的5-7张排中是否有同花顺
+     * **/
+    // function func (nums,num) {
+    //   return nums.some(item=>item == num)
+    // }
+    // function shunzi(nums) {
+    //   var len = nums.length
+    //   for(var i = 0;i< len; i++) {
+    //     var blo1,blo2,blo3
+    //     blo1 = func(nums,nums[i] + 1) && func(nums,nums[i] + 2)
+    //     blo2 = func(nums,nums[i] - 1) && func(nums,nums[i] + 1)
+    //     blo3 = func(nums,nums[i] - 1) && func(nums,nums[i] - 2)
+    //     return blo1 || blo2 || blo3
+    //   }
+    // }
+    // a = [4,7,8,10,4,1,3,5]
+    // console.log(shunzi(a))
+
+
+    // async function a() {
+    //   console.log(1)
+    //   setTimeout(()=>{
+    //     console.log(10)
+    //   })
+    //   return 2
+    // }
+    // async function b() {
+    //   console.log(3)
+    //   var c = await a()
+    //   console.log(c)
+    //   console.log(4)
+    // }
+    // console.log(5)
+    // b()
+    // setTimeout(()=>{
+    //   console.log(6)
+    // })
+    // new Promise((resolve,reject)=>{
+    //   console.log(7)
+    // }).then(res=>{
+    //   console.log(8)
+    // })
+    // console.log(9)
+    // var arr = ['k','j','q',10,1,5]
+    // var arr2= [5,2,3]
+    // console.log('J' > 10)
+    // console.log('k' > 10)
+    // console.log('q' > 10)
+    // console.log(arr.sort())
+    // for(var i = 0;i< 10;i++){
+    //   setTimeout(()=>{
+    //     console.log(i)
+    //   },0)
+    // }
+    // var name = '狗子';
+    // (function(){
+    //   console.log(name)
+    //   // if(typeof name == 'undefined') {
+    //   //   console.log(111)
+    //   // } else {
+    //   //   console.log(name)
+    //   // }
+    // })()
+    // var foo='hello';
+    // var name = 'fff';
+    // (function(){
+    //     console.log(foo,name);
+    //     var foo=foo||'world';
+    //     console.log(foo);
+    // })();
+    
+    var a = "0708直播间秒杀-严选封箱胶带"
+    console.log(a.indexOf('直播'))
+    
+
+
+
+    </script>
+    <!-- <script src="./print2.js"></script> -->
 </html>

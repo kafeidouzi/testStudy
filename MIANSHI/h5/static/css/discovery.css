@@ -1,0 +1,352 @@
+/* 发现 */
+.discovery .m-tabs {
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  top: 44px;
+  z-index: 10;
+}
+.discovery .article {
+  margin-top: 88px;
+  margin-bottom: 50px;
+}
+.discovery .article .art-item {
+  padding: 0.3rem 0.2rem;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.discovery .article .art-item:after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 1px;
+  background: #f1f1f1;
+  position: absolute;
+  left: 0.2rem;
+  right: 0.2rem;
+  bottom: 0;
+  z-index: 1;
+}
+.discovery .article .art-item:last-child:after {
+  height: 0;
+}
+.article .art-item .item-tit {
+  line-height: 1.5;
+  padding-bottom: 0.16rem;
+  font-size: 0.3rem;
+}
+@media screen and (max-width:374px) {
+  .article .art-item .item-tit {
+    font-size: 15px;
+  }
+}
+.article .art-item .item-con {
+  position: relative;
+}
+.article .art-item .item-con .img {
+  float: left;
+  width: 3rem;
+  height: 2rem;
+}
+.article .art-item .item-con .img .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+.article .art-item .item-con .txt {
+  margin-left: 3.2rem;
+}
+.article .art-item .item-con .txt .time {
+  color: #999;
+  font-size: 0.26rem;
+  line-height: 0.5rem;
+}
+@media screen and (max-width:374px) {
+  .article .art-item .item-con .txt .time {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+.article .art-item .item-con .txt .txt-con {
+  color: #666;
+  font-size: 0.26rem;
+  height: 1.32rem;
+  line-height: 0.44rem;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width:374px) {
+  .article .art-item .item-con .txt .txt-con {
+    font-size: 12px;
+    height: 66px;
+    line-height: 22px;
+  }
+}
+.article .art-item .item-bot {
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  color: #666;
+  line-height: 0.44rem;
+}
+@media screen and (max-width:374px) {
+  .article .art-item .item-bot {
+    font-size: 12px;
+  }
+}
+.article .art-item .item-bot .writer {
+  float: left;
+}
+.article .art-item .item-bot .writer .wri-img {
+  display: inline-block;
+  vertical-align: top;
+  height: 0.44rem;
+  width: 0.44rem;
+  font-size: 0;
+}
+.article .art-item .item-bot .writer .wri-img .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.article .art-item .item-bot .writer .wri-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2px;
+  width: 2.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.article .art-item .item-bot .look {
+  float: right;
+  width: 3.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: right;
+  overflow: hidden;
+}
+.article .art-item .item-bot .look .num {
+  color: #333;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.article .art-item .item-bot .look .sca {
+  position: relative;
+  margin-right: 15px;
+}
+.article .art-item .item-bot .look .sca:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: #aaa;
+  border-radius: 50%;
+  position: absolute;
+  right: -13px;
+  top: 45%;
+}
+/* end 发现 */
+
+/* 文章详情 */
+.discovery-det {
+  position: relative;
+}
+.discovery-det .news-det {
+  background: #fff;
+  padding: 10px;
+}
+.discovery-det .news-det .img {
+  width: 100%;
+}
+.news-det .news-det-tit {
+  margin: 5px 0;
+}
+.news-det .news-det-tit .tit-p {
+  font-size: 16px;
+  text-align: center;
+}
+.news-det .news-det-con .con-txt {
+  line-height: 24px;
+  text-indent: 14px;
+  font-size: 14px;
+}
+.news-det .news-det-con .con-img {
+  display: block;
+  margin: 8px 0;
+  font-size: 0;
+}
+.news-det-time {
+  color: #999;
+  text-align: left;
+  margin-top: 7px;
+  font-size: 12px;
+}
+.news-det-time .left {
+  float: left;
+  font-family: arial;
+}
+.news-det-time .left .num {
+  color: #333;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.news-det-time .right {
+  float: right;
+  font-family: arial;
+}
+.discovery-det .comments {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px 10px 0;
+  font-size: 13px;
+}
+.discovery-det .comments .com-tit {
+  padding: 5px 0;
+}
+.discovery-det .comments .com-tit .com-num {
+  float: left;
+  color: #999;
+  line-height: 15px;
+  font-family: arial;
+}
+.discovery-det .comments .com-tit .com-num .num {
+  color: #333;
+  margin-left: 4px;
+  font-weight: 400;
+}
+.discovery-det .comments .com-tit .likes {
+  float: left;
+  margin-left: 23px;
+  line-height: 15px;
+  position: relative;
+  font-family: arial;
+}
+.discovery-det .comments .com-tit .likes:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  left: -12px;
+  top: 6px;
+  background: #333;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+}
+.discovery-det .comments .com-tit .likes .img {
+  width: 15px;
+  height: 15px;
+  vertical-align: top;
+  margin-right: 3px;
+}
+.discovery-det .comments .com-item {
+  margin-top: 10px;
+}
+.discovery-det .comments .com-item:last-child {
+  margin-bottom: 50px;
+}
+.discovery-det .comments .com-item .sculpture {
+  float: left;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+.discovery-det .comments .com-item .sculpture .img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.discovery-det .comments .com-item .com-txt {
+  margin-left: 40px;
+}
+.discovery-det .comments .com-item .com-txt .uesr-name {
+  line-height: 30px;
+  height: 30px;
+  color: #999;
+}
+.discovery-det .comments .com-item .com-txt .uesr-name .name {
+  float: left;
+  color: #999;
+}
+.discovery-det .comments .com-item .com-txt .uesr-name .com-time {
+  float: right;
+  color: #999;
+  font-family: arial;
+  font-size: 12px;
+}
+.discovery-det .comments .com-item .com-txt .txt-con {
+  line-height: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.discovery-det .comments .com-item:last-child .com-txt .txt-con {
+  padding-bottom: 20px;
+  border: 0;
+}
+.discovery-det .comments .com-item.no-reply {
+  padding: 30px 0;
+  text-align: center;
+}
+.discovery-det .comments .com-item.no-reply .no-reply-img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  font-size: 0;
+}
+.discovery-det .comments .com-item.no-reply .no-reply-img .img {
+  width: 100%;
+  height: 100%;
+}
+.discovery-det .comments .com-item.no-reply .no-reply-txt {
+  font-size: 12px;
+  color: #bbb;
+  line-height: 20px;
+}
+.write-com {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  max-width: 750px;
+  background: #fff;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.03);
+}
+.write-com .write-box {
+  position: relative;
+  padding-right: 78px;
+  height: 34px;
+  padding: 2px 78px 0 0;
+}
+.write-com .txt {
+  width: 91%;
+  height: 25px;
+  border: 0;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 7px 15px 0;
+  background: #f0f2f5;
+  border-radius: 30px;
+}
+.write-com .btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 68px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background: var(--themescolor);
+  text-align: center;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: arial;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* end 文章详情 */
