@@ -78,3 +78,13 @@ git rebase操作实际上是将当前执行rebase分支的所有基于原分支�
 
 
 nvm ls available   查看node版本
+
+### git 在本地 commit之后未push到远程分支，撤销commit的内容如何操作？
+
+三个命令即可：
+
+git fetch
+
+git pull
+
+git reset --hard origin/#your_version_name#

@@ -1,3 +1,6 @@
+### react原理
+[!https://zhuanlan.zhihu.com/p/101507773]
+
 ### redux 原理：
 1. 在index钟会先进行判断非生产环境redux是否被压缩了，如果压缩了会给一个warning
 
@@ -32,10 +35,63 @@ compose(funcA(funcB(funcC())))
   将多个reducer合并成一个总的reducer，用合成的reducer去调用createStore方法
   每个reducer都会作为value并且有一一对应的key，
   合成的总的reducer会将所有reducer的state合成一个，每个reducer返回的state也都会与每个key一一对应
+8. bindActionCreators
+  传入 action creators 和 dispatch, 返回绑定了 dispatch 的 action creators。
+
+实现也很简单，遍历 actionCreators, 把每个元素用 dispatch 处理后生成新的函数，返回新函数的集合。
+```
+function bindActionCreators(actionCreators, dispatch) {
+  const boundActionCreators = {};
+  Object.keys(actionCreators).forEach(key => {
+    const actionCreator = actionCreators[key];
+    if (typeof actionCreator === 'function') {
+      boundActionCreators[key] = (...args) => dispatch(actionCreator(...args));
+    }
+  })
+  return boundActionCreators;
+}
+
+const boundActionCreators = bindActionCreators({
+  addTodo,
+  plusTodo,
+  setDataTodo,
+}, dispatch);
+
+// 写入数据
+boundActionCreators.addTodo('Use Redux')
+boundActionCreators.plusTodo()
+```
+
+### 手撸redux
+```
+// createStore 函数
+    + getState()  获取store方法
+    + dispatch  修改store方法
+    + subscribe  订阅store方法
+    + replaceReducer  重置reducer
+function createStore(reducer, preloadedState) {
+  let currentState = preloadedState   //如果没有就是undefind
+  let currentListeners  = []
+  function getState(){
+    return currentState
+  }
+  function dispatch(action) {
+    currentState = reducer( currentState, action )
+    return action
+  }
+  function subscribe(listener) {
+    currentListeners.push(listener)
+  }
+  function replaceReducer()
+  return { getState, dispatch, subscribe, replaceReducer }
+}
+
+```
+
 
 ### HOOKS
  #### 使用hook的动力
- 1. 组件的服用药使用props和高阶组件，较为麻烦
+ 1. 组件的复用要使用props和高阶组件，较为麻烦
  2. providers，consumers，高阶组件，render props抽象的组件会形成“地狱嵌套”
  3. 为的共享状态逻辑提供更好的原生途径
  #### hook是什么
@@ -99,4 +155,9 @@ export function useState(initVal) {
 #### react hooks的优点
   1. 复用性强
   2. 代码量更少
+
+
+### setState啥时候是同步的
+  1. 事件绑定时，会执行batchUpdate函数，将isBatchingUpdates标识改为true，一并执行
+  2. setTimeout/setInterval不会执行batchUpdate函数，会直接执行
   

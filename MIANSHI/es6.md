@@ -236,6 +236,10 @@
   + Promise.reject()
   + Promise.try()
   + Promise.catch()
+  + **promise在执行then和catch会返回一个新的promise，该promise的最终状态会根据then或catch的回调函数的执行结果**
+    1. 如果回调函数最终是throw，状态为reject
+    2. 如果回调函数最终是return，状态为fullfilled（resolved）
+    3. 如果回调函数返回的是一个promise，该promise会和回调函数的返回的promise状态保持一致
 
 ### Iterator (遍历器) 
   + 它是一种接口，为不同数据结构提供统一的访问机制。任何数据结构只要部署了Iterator接口，就可以完成遍历操作。

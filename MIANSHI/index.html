@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wraper{
+            width: 600px;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .back{
+            background: #f5f5f5;
+            width: 180px;
+        }
+        .back-nei {
+            background: yellowgreen;
+            width: 100%;
+            height: 100%;
+        }
+        /* .back-2 {
+            background: yellowgreen;
+            position: absolute;
+            left: 10px;
+            animation: myanition 3s  infinite;
+            width: 180px;
+            height: 400px;
+        } */
+        @keyframes myanition {
+            0% { left: 8px;}
+            25% { left: 220px;}
+            75% { left:430px;}
+            100% { left:10px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="back-2"></div>
+        <div class="back">
+            <div class="left"></div>
+        </div>
+        <div class="back">
+            <div class="center"></div>
+        </div>
+        <div class="back">
+            <div class="right"></div>
+        </div>
+    </div>
+    <!-- <div id="some-element-you-want-to-animate" style="background: yellowgreen;width: 200px;height: 200px;"></div> -->
+    <script>
+        console.log(999)
+        window.onload = function() {
+            let a = 1000
+            let timer = setInterval(()=>{
+                console.log(1)
+            },a)
+            setTimeout(()=> {
+                clearInterval(timer)
+                a = 200
+                setInterval(()=>{
+                console.log(2)
+            },a)
+            },5000)
+
+            // this.jian = ()=>{内容}
+            // this.timer = setInterval(this.jian,this.timers)
+
+            // // 点击抽奖
+            // clearInterval(this.timer)
+            // this.timers = 200 
+            // this.timer = setInterval(this.jian,this.timers)
+
+
+            // //抽奖结束
+            // clearInterval(this.timer)
+            // this.timers = 1000
+            // this.timer = setInterval(this.jian,this.timers)
+
+        // let arr = [1,2,3]
+        // let time1,time2,time3
+        // setInterval(()=>{
+        //     arr.forEach(item=>{
+        //         if(item == 1) {
+                    
+        //             time1 = setTimeout(()=>{
+        //                 document.querySelector('.left').classList.add("back-nei");
+        //                 document.querySelector('.right').classList.remove("back-nei" );
+        //                 // clearTimeout(time3)
+        //             },200)
+        //         }
+        //         if(item == 2) {
+                    
+        //             time2 = setTimeout(()=>{
+        //                 document.querySelector('.center').classList.add("back-nei");
+        //                 document.querySelector('.left').classList.remove("back-nei" );
+        //                 clearTimeout(time1)
+        //             },400)
+        //         }
+        //         if(item == 3) {
+                    
+        //             time3 = setTimeout(()=>{
+        //                 document.querySelector('.right').classList.add("back-nei");
+        //                 document.querySelector('.center').classList.remove("back-nei" );
+        //                 clearTimeout(time2)
+        //             },600)
+        //         }
+                
+        //     })
+        // },700)
+        // const element = document.getElementById('some-element-you-want-to-animate');
+        // let start;
+
+        // function step(timestamp) {
+        //     if (start === undefined)
+        //     start = timestamp;
+        //     const elapsed = timestamp - start;
+
+        //     //这里使用`Math.min()`确保元素刚好停在200px的位置。
+        //     element.style.transform = 'translateX(' + Math.min(0.1 * elapsed, 200) + 'px)';
+
+        //     if (elapsed < 2000) { // 在两秒后停止动画
+        //     window.requestAnimationFrame(step);
+        //     }
+        // }
+
+        // window.requestAnimationFrame(step);
+        }
+
+        
+    </script>
+</body>
+</html>
