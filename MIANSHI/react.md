@@ -160,3 +160,5 @@ export function useState(initVal) {
 ### setState啥时候是同步的
   1. 事件绑定时，会执行batchUpdate函数，将isBatchingUpdates标识改为true，一并执行
   2. setTimeout/setInterval不会执行batchUpdate函数，会直接执行
+
+### react-redux,redux,redux-saga,redux-thunk
