@@ -162,3 +162,37 @@ export function useState(initVal) {
   2. setTimeout/setInterval不会执行batchUpdate函数，会直接执行
 
 ### react-redux,redux,redux-saga,redux-thunk
+
+### react 的fiber的domdiff
+
+jsx编译打包 createElement(type,config,children),children可以有多个
+
+fiber表示一个工作单元 
+
+开始构建，构建完成  （父 子 父）
+
+return（向父级返回）  child（指向子元素）  subling（指向同级下一个元素）
+
+遍历顺序： [!https://static.zhufengpeixun.com/gou_jian_he_wan_cheng_fiber_shu_an_li_1_1636710450130.jpg] 
+  **开始遍历一个fiber节点后**
+1. 如果有儿子，处理儿子
+2. 如果没有儿子，处理弟弟
+4. 如果没有弟弟，父亲结束了，处理叔叔
+5. 如果没有叔叔，找他爷爷
+
+####  updateQueue更新队列  fiber更新环状链表  
+  1. pedding永远指向最新的更新，pedding的next永远指向第一个更新
+
+#### fiberRootNode （真是dom节点）   hostRootFiber（根节点的fiber） 
+
+#### 双缓冲
+来回换，根据老fiber创建新的fiber
+
+更新  
+1. render  根据新的 老fiber和新的vdom创建新的fiber，
+2. commit   根据diff结果更新
+
+createElement创建vdom，render创建fiber
+fiber的主要目的可以暂停，然后再恢复
+
+在render根据vdom创建fiber节点，一个vdom创建一个fiber
