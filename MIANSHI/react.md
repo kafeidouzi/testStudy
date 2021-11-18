@@ -196,3 +196,44 @@ createElement创建vdom，render创建fiber
 fiber的主要目的可以暂停，然后再恢复
 
 在render根据vdom创建fiber节点，一个vdom创建一个fiber
+
+
+
+
+
+[!https://static.zhufengpeixun.com/cong_render_dao_zhi_xing_gong_zuo_xun_huan_de_fiber_jia_gou_4_1636817909854.jpg]
+
+单个元素系列
+[!https://static.zhufengpeixun.com/dan_jie_dian_diff_1636818669377.jpg]
+
+####  当新的vdom节点只有一个
+
+
+根fiber的upateQueue  放的是一个环状链表
+原生组件的updateQueue  放的是一个数组[propskey1，值1，propskey2，值2.....]
+
+
+每次生成的副本woringInProgess,**不会**把原来的child也复制过来
+
+单节点有多哥儿子时元素首次渲染时，父节点渲染完成时，会把当前的fiber的大儿子里的child直接append进自己
+
+
+1. key相同，类型相同，属性不同
+2. key相同，类型不同
+3. 节点类型相同，key不同  （删老的，建新的）
+4. 原来多个节点，现在只有一个
+
+
+
+多个节点 
+1. 多个节点数量和key相同，type不同
+2. 多个节点类型和key相同，有新增元素
+3. 多个节点类型和key相同，有删除老元素
+4. 对个节点数量不同，key不同 （核心）
+
+核心图解
+[!https://static.zhufengpeixun.com/duo_ge_jie_dian_shu_liang_bu_tong_key_bu_tong_1_1637057627706.jpg]
+
+
+
+lane, exprieTime, 任务队列，优先级，打断
