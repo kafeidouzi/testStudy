@@ -198,6 +198,21 @@ fiber的主要目的可以暂停，然后再恢复
 在render根据vdom创建fiber节点，一个vdom创建一个fiber
 
 
+老fiber和新的vdom创建新的fiber,是哪个老fiber，如果是current的fiber，怎么复用的最初的fiber，就套了最初的壳？
+
+tabnine   
+
+
+初次挂载有两个根fiber（根fiber开始创建一个，在事件循环开始时又创建了一个，两个一样）
+
+初次渲染 [!https://static.zhufengpeixun.com/cong_render_dao_zhi_xing_gong_zuo_xun_huan_de_fiber_jia_gou_3_1636810005933.jpg]
+
+
+初次渲染，创建新的fiber，创建其对应的真是dom（），收集当前的fiber的副作用到父fiber上，渲染真是dom（根据相关flags，去进行dom的插入，删除等）
+
+render阶段可以中断，commit不能中断
+
+
 
 
 

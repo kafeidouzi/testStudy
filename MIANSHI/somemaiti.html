@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+    let obj = {a:{b:{c:1}}}
+    // function myfind (obj,str) {
+    //     let arr = str.split('.')
+    //     let index = 0
+    //     for (var val of obj) {
+    //         let valArr = Object.keys(val)
+    //         let item = valArr.find(arr[index])
+    //         if( item) {
+    //             ++index;
+    //             arr.splice(0,1)
+    //             myfind(item,arr.join('.'))
+    //         } else {
+    //             return ;
+    //         }
+    //     }
+    // }
+    // 生成SKU
+// 已知规格数据
+const spu = 'AB1234567';
+const specList = [ 
+ ["red", "yellow"],
+ ["XL", "S"], 
+ ['a1', 'a2'],
+ ['b1', 'b2'],
+];
+// function createSKU(spu,specList){
+//     // specList.forEach((item,index) => {
+//     //     specList[index].
+//     // });
+//     specList[0].forEach(element => {
+//         specList[1].forEach(item=>{
+//             specList[2].forEach(ite=> {
+//                 specList[3].forEach(it=> {
+//                     let arr = []
+//                     arr.push(spu,element,item,ite,it)
+//                     let sku = arr.join('-')
+//                     console.log(sku)
+//             })
+//             })
+//         })
+//     });
+// }
+// createSKU(spu,specList)
+/** 
+  输出结果：
+ AB1234567-red-XL-a1-b1;
+ AB1234567-red-XL-a1-b2;
+ AB1234567-red-XL-a2-b1;
+ AB1234567-red-XL-a2-b2;
+ AB1234567-red-S-a1-b1;
+ AB1234567-red-S-a1-b2;
+ AB1234567-red-S-a2-b1;
+ AB1234567-red-S-a2-b2;
+ AB1234567-yellow-XL-a1-b1;
+ AB1234567-yellow-XL-a1-b2;
+ AB1234567-yellow-XL-a2-b1;
+ AB1234567-yellow-XL-a2-b2;
+ AB1234567-yellow-S-a1-b1;
+ AB1234567-yellow-S-a1-b2;
+ AB1234567-yellow-S-a2-b1;
+ AB1234567-yellow-S-a2-b2;
+  ....
+*/
+// 请完善如下createSKU函数及注释信息以符合输出结果;
+/** 
+* @param
+* @return 
+*/
+
+// let arr = [1, 2, 3, 1, 5, 2, 6, 9, 2]
+
+
+// function func (arr) {
+//     return Array.from(new Set(arr))
+// }
+
+// function func (arr) {
+//     let _arr = []
+//     arr.forEach(item=> {
+//         let bloItem = _arr.find(ite => ite === item)
+//         if(!bloItem) {
+//             _arr.push(item)
+//         }
+//     })
+// //     return _arr
+// // }
+
+// let arr = [1, 2, 3, 4, 5, 1, 3, 3, 1, 2, 3, 56, 12]
+
+// function func (arr) {
+//     let _arr = [...arr]
+//     let newArr =  Array.from(new Set(arr))
+//     let scortsArr = []
+//     newArr.forEach(item => {
+//         let scorts = 0
+//         arr.forEach(ite => {
+//             if (item == ite) {
+//                 scorts += 1
+//             }
+//         })
+//         scortsArr.push(scorts)
+//     })
+//     let arrItem = scortsArr.max()
+//     let index = newArr.findIndex(item => item == arrItem)
+//     return newArr[index]
+// }
+
+// console.log(1)
+
+// setTimeout(()=> {
+//     console.log(2)
+//     Promise.resolve().then(()=>{
+//         console.log(3)
+//         setTimeout(()=>{
+//             console.log(5)
+//         })
+//     })
+// })
+// setTimeout(()=>{
+//     console.log(4)
+// })
+// async function async1() {
+//     console.log('async1 start')
+//     await async2()
+//     console.log('async1 end')
+// }
+// async function async2() {
+//     console.log('async2')
+// }
+// console.log('script start')
+// setTimeout(function () {
+//     console.log('setTimeout')
+// }, 0)
+// async1()
+// new Promise((resolve) => {
+//     console.log('promise1')
+//     resolve()
+// }).then(function () {
+//     console.log('promise2')
+// })
+// console.log('script end')
+
+// 字符串压缩
+// 输入：aaabbbcc 输出：a3b3c2
+// 输入：bbbaaacccbbcd  输出： b3a3c3b2c1d1
+
+
+
+// function func (str) {
+//     let arr = str.split('')
+//     let _str = ''
+    // let newArr = Array.from(new Set(arr))
+    // newArr.forEach((item,index)=> {
+    //     let num = 0
+    //     arr.forEach((ite,idx)=> {
+    //         if(item === ite) {
+    //             num += 1
+    //         }
+    //     })
+    //     _str += item+''+num
+    // })
+    // return _str
+//     let _arr = []
+//     arr.forEach((item,index) => {
+//         if(_arr.length == 0) {
+//             _arr.push(item)
+//         } else  {
+//             if(arr[index -1] === arr[index]) {
+//                 _arr.push(item)
+//                 // arr.splice(index,1)
+//             } else {
+//                 _str += _arr[0] + '' + _arr.length
+//                 _arr = []
+//                 _arr.push(item)
+//                 if(index === arr.length -1) {
+//                     _str += _arr[0] + '' + _arr.length
+//                 }
+//             }
+//         }
+//     });
+//     return _str
+// }
+// console.log(func('bbbaaacccbbcd'))
+
+
+
+
+
+
+    </script>
+</body>
+</html>
