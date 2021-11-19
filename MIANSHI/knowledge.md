@@ -327,6 +327,27 @@ var s1 = new Child()
     Auto Rename Tag
     Autoprefixer
     Beautify
+    Chinese
+    3D Viewer for VSCode
+    Auto Rename Tag
+    Document This
+    EditorConfig for VS Code
+    ES7 React/Redux/GraphQL/React-Native snippets
+    ESLint
+    Git History
+    GitLens — Git supercharged
+    indent-rainbow
+    IntelliSense for CSS class names in HTML
+    Vetur
+    Xmind Viewer
+    WXML - Language Service
+    vscode-styled-components
+    vscode-fileheader-git
+    Visual Studio IntelliCode
+    View In Browser
+    Path Intellisense
+    npm Intellisense
+    Autoprefixer
 
 
 
