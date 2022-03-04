@@ -18,6 +18,9 @@
     "g-xlsx-style": "^0.1.0",
     "js-xlsx": "^0.8.22",
     "moment": "^2.18.1",
+    "react": "^17.0.2",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
     "three": "^0.115.0",
     "vue": "^2.6.11",
     "xlsx": "^0.15.6"

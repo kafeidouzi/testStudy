@@ -334,3 +334,20 @@ js 源代码 ---> 解析器 ---> 抽象语法书（AST） ---> 字节码发生�
 **去优化**是指机器码已经不能满足运行诉求，（例如：一个变量从 string 类型转变成 number 类型，机器码编译的是 string 类型，此时已经不能满足运行需求，因此 v8 会执行去优化操作，将代码回退到 Ignition 进行解释执行）
 
 #### v8 的运行时表现：结合 v8 额编译原理，实践 v8 的解析六层中的具体运行表现
+
+## react 任务调度和 lane
+
+### react 任务调度
+
+浏览器每帧执行的事件：
+
+- 阻塞事件 touch wheel
+- 非阻塞事件 click keypress
+- MessageChannel
+- 定时器
+- 帧事件 resize，scroll，mediaquery，animation events
+- requestAnimationFrame
+- 布局
+- 绘制
+
+performance.now() 获取浏览器渲染时间

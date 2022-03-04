@@ -108,3 +108,9 @@ git reset --hard origin/#your_version_name#
    git push origin newName
 
 删除远程分支旧分支 3. git push --delete origin oldName
+
+### log 和 reflog 区别
+
+log 标识提交过的，不包括删除的
+
+reflog 包括所有的记录
