@@ -93,3 +93,13 @@ js 合并请求，淘宝可以看
 
 tp90 top percentile 90 90%
 tp90 == 3ms
+
+rollup 钩子：
+编译钩子：
+watchChange -> options ->buildStart-> resolvedId -> tarnsform | -> moudleParsed-> resolvedDynamicImport
+->shouldTransformCachedMoudle
+->buildend
+  
+vite 在开发阶段用的 esbuild，生成打包阶段用的 rollup
+
+输出钩子：outputOptions-》 renderStart->banner->footer->intro->outro->renderDynamicimport-》argumentsChunkHash
